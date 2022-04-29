@@ -8,8 +8,6 @@ Integrantes:
 
 * Federico Despontin: Ingeniero Industrial - MBA de 58 años, casado y con cinco hijos. Soy oriundo de Misiones y vivo en la Ciudad de Buenos Aires. Me gusta el tenis y la náutica.
 
-* Barbagelata Antonio: Contador Publico - 46 años, divorciado, con dos hijas. Nacido en Paraná - Entre Ríos. Vivo en Capital Federal desde 2002. Me gusta Kite Surf, Pintar, La Musica, Boxeo, Caminar, Leer. Hoy en busca de otros horizontes con la programación.
-
 * Pablo Cadena: 29 años, Ingeniero Industrial de Salta-Argentina. Me gusta el fútbol, lectura y videojuegos
 
 * Omar Ospina: 54 años, con estudios de tecnología en sistemas de información, con dos hijas; me gusta el cine, montar en bicicleta y disfrutar del campo, nací y vivo en Medellín, Colombia.
