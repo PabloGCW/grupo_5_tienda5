@@ -10,6 +10,7 @@
     text-align: center;
     font-size: 14px;
     padding: 5px;
+    width: 100%;
 }
 
 /* Estilos para todo el header */
@@ -34,4 +35,88 @@ header{
 .navBar ul li{
     margin: 0px 5px;
     padding: 5px;
+}
+
+.liOcultoNavBar{
+    display: none;
+}
+
+/* Estilos para el slider */
+
+#slider{
+ margin: auto;
+ max-width: 800px;
+ width: 100%;
+ padding: 30px;
+}
+
+#slider ul li {
+   padding: 0;
+   margin: 0;
+   list-style: none;
+}
+
+#slider ul.slider{
+ position: relative;
+ max-width: 800px;
+ width: 100%;
+ height: 300px;
+}
+
+#slider ul.slider li {
+   position: absolute;
+   left: 0px;
+   top: 0px;
+   opacity: 0;
+   width: inherit;
+   height: inherit;
+   transition: opacity .5s;
+   background:#fff;
+}
+
+#slider ul.slider li img{
+ width: 100%;
+ height: 300px;
+ object-fit: cover;
+}
+
+#slider ul.slider li:first-child {
+   opacity: 1; /*Mostramos el primer <li>*/
+}
+
+#slider ul.slider li:target {
+   opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+#slider ul.menu{
+    text-align: center;
+}
+#slider ul.menu li{
+ display: inline-block;
+}
+
+#slider ul.menu li a{
+ /* display: inline-block; */
+ color: white;
+ text-decoration: none;
+ background-color: #000;
+ padding: 3px;
+ width: 20px;
+ height: 20px;
+ font-size: 10px;
+ border-radius: 100%;
+}
+
+
+@media (min-width: 425px){
+
+}
+
+@media (min-width: 992px){
+    .liOcultoNavBar{
+        display: block;
+    }
+    .menuOcultoNavBar{
+        display: none;
+    }
 }
