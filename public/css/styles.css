@@ -2,6 +2,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-family: 'Oswald', sans-serif; 
 }
 
 #bienvenida{
@@ -15,9 +16,6 @@
 
 /* Estilos para todo el header */
 
-header{
-    font-family: 'Oswald', sans-serif; 
-}
 .navBar img{
     width: 20vw;
     height: 100%;
@@ -70,7 +68,7 @@ header{
    opacity: 0;
    width: inherit;
    height: inherit;
-   transition: opacity .5s;
+   transition: opacity 0.5s;
    background:#fff;
 }
 
@@ -108,7 +106,99 @@ header{
 }
 
 
+/* Estilos para Main */
+
+main h2{
+    text-align: center;
+    font-size: 24px;
+}
+
+.serviciosMobile{
+    text-align: center;
+}
+.serviciosDesktop{
+    display: none;
+}
+
+article{
+    text-align: center;
+    background-color: white;
+    margin: 10px 15px;
+    width: 20vw;
+    height: 50%;
+    padding: 5px;
+}
+article img{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 5px;
+}
+
+h3{
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.precio{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.desc{
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.BotonCompra{
+    color: #ffffff;
+    background-color: #c8aa86;
+    border-radius: 30px;
+    padding: 5px;
+    
+}
+
+.articulosMobile{
+    display: flex;
+    justify-content: space-around;
+}
+
+#botonVerMas{
+    color: #ffffff;
+    background-color: #c8aa86;
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 30px;
+    padding: 5px;
+    font-family: 'Playfair Display', serif; 
+    text-align: center;
+    width: 100px;
+    margin: auto;
+}
+
+/* Estilos para Footer */
+
+footer{
+    border-top: #DCDCDC solid 1px;
+    margin-top: 10px;
+}
+.footer{
+    text-align: center;
+    margin: 10px;
+    width: 50%;
+}
+.imgmediosdepago{
+    width: 50%;
+}
+
+
+
 @media (min-width: 425px){
+    .serviciosMobile{
+        display: none;
+        }
+    .serviciosDesktop{
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
 
 }
 
@@ -118,5 +208,22 @@ header{
     }
     .menuOcultoNavBar{
         display: none;
+    }
+
+    .serviciosMobile{
+    display: none;
+    }
+    .serviciosDesktop{
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+    .articulosDesktop{
+        display: flex;
+        justify-content: space-around;
+    }
+    .flexFooter{
+        display: flex;
+        justify-content: space-between;
     }
 }
