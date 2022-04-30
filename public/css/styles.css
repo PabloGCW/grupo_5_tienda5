@@ -1,4 +1,37 @@
 *{
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
+}
+
+#bienvenida{
+    color: #ffffff;
+    background-color: #c8aa86;
+    text-align: center;
+    font-size: 14px;
+    padding: 5px;
+}
+
+/* Estilos para todo el header */
+
+header{
+    font-family: 'Oswald', sans-serif; 
+}
+.navBar img{
+    width: 20vw;
+    height: 100%;
+}
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.navBar ul{
+    list-style: none;
+    display: flex;
+}
+.navBar ul li{
+    margin: 0px 5px;
+    padding: 5px;
 }
