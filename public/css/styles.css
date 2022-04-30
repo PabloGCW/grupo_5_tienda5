@@ -14,13 +14,19 @@
     width: 100%;
 }
 
-/* Estilos para todo el header */
-
+/* Estilos para el header */
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    background-color: #ffffff;
+}
 .navBar img{
     width: 20vw;
     height: 100%;
 }
 .navBar{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -107,7 +113,9 @@
 
 
 /* Estilos para Main */
-
+main  {
+    margin-top: 137px;
+}
 main h2{
     text-align: center;
     font-size: 24px;
@@ -158,6 +166,7 @@ h3{
 .articulosMobile{
     display: flex;
     justify-content: space-around;
+    align-items: center
 }
 
 #botonVerMas{
@@ -171,18 +180,21 @@ h3{
     text-align: center;
     width: 100px;
     margin: auto;
+    margin-bottom: 5px;
 }
 
 /* Estilos para Footer */
 
 footer{
     border-top: #DCDCDC solid 1px;
-    margin-top: 10px;
+    margin: auto;
+    text-align: center;
 }
 .footer{
     text-align: center;
     margin: 10px;
     width: 50%;
+    margin: auto;
 }
 .imgmediosdepago{
     width: 50%;
@@ -225,5 +237,8 @@ footer{
     .flexFooter{
         display: flex;
         justify-content: space-between;
+    }
+    .footer{
+        margin-top: 0px ;
     }
 }
