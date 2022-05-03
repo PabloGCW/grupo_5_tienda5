@@ -41,6 +41,11 @@ header{
     padding: 5px;
 }
 
+.navBar ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
 .liOcultoNavBar{
     display: none;
 }
@@ -114,7 +119,7 @@ header{
 
 /* Estilos para Main */
 main  {
-    margin-top: 137px;
+    margin-top: 60px;
 }
 main h2{
     text-align: center;
@@ -161,6 +166,11 @@ h3{
     border-radius: 30px;
     padding: 5px;
     
+}
+
+.BotonCompra a{
+    text-decoration: none;
+    color: #ffffff;
 }
 
 .articulosMobile{
@@ -240,5 +250,11 @@ footer{
     }
     .footer{
         margin-top: 0px ;
+    }
+    article .BotonCompra{
+        opacity: 0;
+    }
+    article:hover .BotonCompra{
+        opacity: 1;
     }
 }
