@@ -14,13 +14,19 @@
     width: 100%;
 }
 
-/* Estilos para todo el header */
-
+/* Estilos para el header */
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    background-color: #ffffff;
+}
 .navBar img{
     width: 20vw;
     height: 100%;
 }
 .navBar{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,6 +39,11 @@
 .navBar ul li{
     margin: 0px 5px;
     padding: 5px;
+}
+
+.navBar ul li a{
+    text-decoration: none;
+    color: #000;
 }
 
 .liOcultoNavBar{
@@ -107,7 +118,9 @@
 
 
 /* Estilos para Main */
-
+main  {
+    margin-top: 60px;
+}
 main h2{
     text-align: center;
     font-size: 24px;
@@ -155,9 +168,15 @@ h3{
     
 }
 
+.BotonCompra a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
 .articulosMobile{
     display: flex;
     justify-content: space-around;
+    align-items: center
 }
 
 #botonVerMas{
@@ -171,22 +190,97 @@ h3{
     text-align: center;
     width: 100px;
     margin: auto;
+    margin-bottom: 5px;
 }
 
 /* Estilos para Footer */
 
 footer{
     border-top: #DCDCDC solid 1px;
-    margin-top: 10px;
+    margin: auto;
+    text-align: center;
 }
 .footer{
     text-align: center;
     margin: 10px;
     width: 50%;
+    margin: auto;
 }
 .imgmediosdepago{
     width: 50%;
 }
+
+/* Estilos para Formularios de Registro  y Login */
+
+h3.formulario{
+    text-align: center;
+    font-size: 22px;
+}
+
+.formulario{
+    padding: 20px;
+    margin: auto;
+    width: 50vw;
+    text-align: left;
+}
+.formColumnas div{
+    display: inline-block;
+    text-align: justify;
+    margin: 5px 10px;
+}
+.formulariodiv{
+    text-align: justify;
+    margin: 5px 10px;
+}
+.formulariodiv label{
+    display: block; 
+}
+.inputcontrol{
+    margin: 10px;
+    padding: 5px;
+    width: 100%;
+    border: #DCDCDC solid 1px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+button.buttonform{
+    padding: 10px;
+    background-color: #ffffff;
+    border: #DCDCDC solid 1px;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    transition: all 450ms;
+}
+button.buttonform:hover{
+    background-color: #c8aa86;
+    color: #ffffff;
+    border-radius: 15px;
+}
+.labelLogin{
+    font-size: 12px;
+}
+.labelLogin a{
+    color: #000;
+}
+
+.optionLogin{
+    font-size: 12px;
+    text-align: right;
+}
+.optionLogin a{
+    color: #000;
+}
+
+
+
+
+
+
+
+/* Media Queries */
 
 
 
@@ -225,5 +319,14 @@ footer{
     .flexFooter{
         display: flex;
         justify-content: space-between;
+    }
+    .footer{
+        margin-top: 0px ;
+    }
+    article .BotonCompra{
+        opacity: 0;
+    }
+    article:hover .BotonCompra{
+        opacity: 1;
     }
 }
