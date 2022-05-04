@@ -210,6 +210,71 @@ footer{
     width: 50%;
 }
 
+/* Estilos para Formularios de Registro  y Login */
+
+h3.formulario{
+    text-align: center;
+    font-size: 22px;
+}
+
+.formulario{
+    padding: 20px;
+    margin: auto;
+    width: 50vw;
+    text-align: left;
+}
+.formColumnas div{
+    display: inline-block;
+    text-align: justify;
+    margin: 5px 10px;
+}
+.formulariodiv{
+    text-align: justify;
+    margin: 5px 10px;
+}
+.formulariodiv label{
+    display: block; 
+}
+.inputcontrol{
+    margin: 10px;
+    padding: 5px;
+    width: 100%;
+    border: #DCDCDC solid 1px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+button.buttonform{
+    padding: 10px;
+    background-color: #ffffff;
+    border: #DCDCDC solid 1px;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 15px;
+    transition: all 450ms;
+}
+button.buttonform:hover{
+    background-color: #c8aa86;
+    color: #ffffff;
+    border-radius: 15px;
+}
+.labelLogin{
+    font-size: 12px;
+}
+.labelLogin a{
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+
 
 
 @media (min-width: 425px){
