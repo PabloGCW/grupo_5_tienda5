@@ -251,6 +251,7 @@ button.buttonform{
     border-radius: 5px;
     width: 100%;
     margin-bottom: 15px;
+    margin-top: 15px;
     transition: all 450ms;
 }
 button.buttonform:hover{
@@ -265,7 +266,13 @@ button.buttonform:hover{
     color: #000;
 }
 
-
+.optionLogin{
+    font-size: 12px;
+    text-align: right;
+}
+.optionLogin a{
+    color: #000;
+}
 
 
 
