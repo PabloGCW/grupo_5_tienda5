@@ -223,6 +223,7 @@ footer{
     flex-direction: row;
     align-items: center;
     margin-bottom: 5%;
+    width: 100%;
 }
 .imagenImagen{
     width: 100%;
@@ -273,6 +274,12 @@ footer{
     text-align: center;
     font-family: 'Playfair Display', serif;
 }
+.botonAgregarCarrito a{
+    color: #ffffff;
+    background-color: #c8aa86;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+}
 .costoEnvio{
     font-weight: bold;
 }
@@ -280,6 +287,7 @@ footer{
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
+    width: 100%;
 }
 .fa-solid.fa-money-bill-1{
     margin-right: 5px;
@@ -377,7 +385,7 @@ div.sectionProdCart1 {
     display: flex;
 }
 
-.sectionProdCart1, .sectionProdCart2, img {
+.sectionProdCart1, .sectionProdCart2 {
     width: 40%;
     display: flex;
 }
@@ -415,7 +423,7 @@ div.costo, .descuento {
     align-items: center;
 }
 
-.subtotal, .total{
+.subtotal, .total {
     margin: 10px;
 }
 
