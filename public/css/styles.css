@@ -210,6 +210,35 @@ footer{
     width: 50%;
 }
 
+/* Estilos para Detalle de producto */
+
+.botonAgregarCarrito{
+    color: #ffffff;
+    background-color: #c8aa86;
+    border-radius: 30px;
+    padding: 5px;
+}
+.tituloImagen{
+    width: 50%;
+    margin-left: 20%;
+    margin-bottom: 15px;
+}
+.imagenImagen{
+    width: 300px;
+    height: 400px;
+}
+.detallesImagen{
+    margin-left: -300px;
+}
+.productoDetalle{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
 /* Estilos para Formularios de Registro  y Login */
 
 h3.formulario{
