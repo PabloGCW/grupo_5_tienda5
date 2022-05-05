@@ -415,7 +415,7 @@ div.costo, .descuento {
     align-items: center;
 }
 
-.subtotal, .total, p {
+.subtotal, .total{
     margin: 10px;
 }
 
@@ -446,7 +446,7 @@ div.botonesCompras-ProdCart button {
 div.botonesCompras-ProdCart button:hover {
     background-color: #a78964; 
 }
-
+ 
 
 
 /* Media Queries */
