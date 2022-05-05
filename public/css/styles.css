@@ -212,32 +212,85 @@ footer{
 
 /* Estilos para Detalle de producto */
 
-.botonAgregarCarrito{
-    color: #ffffff;
-    background-color: #c8aa86;
-    border-radius: 30px;
-    padding: 5px;
-}
 .tituloImagen{
     width: 50%;
     margin-left: 20%;
-    margin-bottom: 15px;
-}
-.imagenImagen{
-    width: 300px;
-    height: 400px;
-}
-.detallesImagen{
-    margin-left: -300px;
+    margin-bottom: 2%;
 }
 .productoDetalle{
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
+    margin-bottom: 5%;
 }
-
+.imagenImagen{
+    width: 300px;
+    height: 400px;
+    margin-left: 10%;
+}
+.detallesImagen{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: stretch;
+    height: 400px;
+    box-sizing: content-box;
+}
+.nombreProducto{
+    font-size: xx-large;
+}
+.precioVenta{
+    font-size: x-large;
+    font-weight: bold;
+}
+.formasPago{
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+.cantidadVenta{
+    font-weight: bold;
+}
+.cantidadFlex{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-bottom: 5%;
+}
+.fa-solid.fa-circle-minus{
+    margin-right: 5px;
+}
+.fa-solid.fa-circle-1{
+    margin-right: 5px;
+}
+.botonAgregarCarrito{
+    color: #ffffff;
+    background-color: #c8aa86;
+    border-radius: 30px;
+    padding: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+.costoEnvio{
+    font-weight: bold;
+}
+.descuentoFlex{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+.fa-solid.fa-money-bill-1{
+    margin-right: 5px;
+}
+.constoEnvioFlex{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+.fa-solid.fa-truck{
+    margin-right: 5px;
+}
 
 /* Estilos para Formularios de Registro  y Login */
 
