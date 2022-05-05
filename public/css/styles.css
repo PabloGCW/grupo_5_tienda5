@@ -356,9 +356,95 @@ button.buttonform:hover{
     color: #000;
 }
 
+/*ESTILOS PARA LA VISTA productCart.html */
 
+.mainProdCart {
+    width: 90%;
+    margin-left: 50px;
+}
 
+div.sectionProdCart1 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content:space-between
+}
 
+.sectionProdCart2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+}
+
+.sectionProdCart1, .sectionProdCart2, img {
+    width: 40%;
+    display: flex;
+}
+
+div.detalles {
+    margin: 20px;
+}
+
+div.precio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.parrafos {
+    margin: 40px 20px 20px 0px;
+}
+
+div.parrafos {
+    margin: 30px 0px;
+}
+
+div.subtotal, .total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c8aa86;
+    border-radius: 25px;
+}
+
+div.costo, .descuento {
+    margin: 20px 25px 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subtotal, .total, p {
+    margin: 10px;
+}
+
+.subtotal, .total, .material-symbols-outlined {
+    margin-top: 15px 0px;
+    margin-right: 40px;
+}
+
+.botonesCompras-ProdCart {
+    display: flex;
+    justify-content: space-around;
+}
+
+div.botonesCompras-ProdCart button {
+    margin: 5%;
+    width: 20%;
+    padding: 0.9vw;
+    display: flex;
+    flex-direction: row;
+    background-color: #c8aa86;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 25px;
+    border: #c8aa86;
+    border-radius: 25px;
+}
+
+div.botonesCompras-ProdCart button:hover {
+    background-color: #a78964; 
+}
 
 
 
@@ -411,4 +497,5 @@ button.buttonform:hover{
     article:hover .BotonCompra{
         opacity: 1;
     }
+
 }

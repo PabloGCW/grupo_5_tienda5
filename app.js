@@ -29,3 +29,4 @@ app.get("/Carrito", (req, res) => {
 app.get("/DetalleProducto", (req, res) => {
     res.sendFile(path.resolve("./views/productDetail.html"))
 })
+
