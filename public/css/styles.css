@@ -198,6 +198,7 @@ h3{
 footer{
     border-top: #DCDCDC solid 1px;
     margin: auto;
+    margin-top: 50px;
     text-align: center;
 }
 .footer{
@@ -266,17 +267,21 @@ footer{
     margin-right: 5px;
 }
 .botonAgregarCarrito{
-    color: #ffffff;
-    background-color: #c8aa86;
-    border-radius: 30px;
-    padding: 5px;
-    text-decoration: none;
     text-align: center;
-    font-family: 'Playfair Display', serif;
+    padding: 10px;
+    background-color: #DCDCDC;
+    border: #DCDCDC solid 1px;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    transition: all 450ms;
+}
+.botonAgregarCarrito:hover{
+    background-color: #c8aa86;
+    border-radius: 15px;
 }
 .botonAgregarCarrito a{
-    color: #ffffff;
-    background-color: #c8aa86;
     text-decoration: none;
     font-family: 'Playfair Display', serif;
 }
@@ -337,7 +342,7 @@ h3.formulario{
 
 button.buttonform{
     padding: 10px;
-    background-color: #ffffff;
+    background-color: #DCDCDC;
     border: #DCDCDC solid 1px;
     border-radius: 5px;
     width: 100%;
