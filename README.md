@@ -1,3 +1,11 @@
+Tablero de Trello
+
+https://trello.com/invite/b/wH3zL4s5/901f54bdaddfc7096b23e6561e467d64/kanban-template
+
+https://trello.com/b/wH3zL4s5/kanban-template
+
+
+
 Breve Descripcion de la Oferta de Productos:
 
 Ofrecemos productos de decoración para el hogar que resalten los sentidos, hagan más confortables los espacios de nuestras casas y produzcan experiencias sensoriales de bienestar.
@@ -29,3 +37,5 @@ https://www.elmueble.com/decoracion/10-accesorios-que-debes-incorporar-a-tu-casa
 https://www.junkodecoracion.com/
 
 https://reinacasa.com.ar/?gclid=CjwKCAjw0a-SBhBkEiwApljU0o0tWIj3fdsHJ6TQO4x5lDGVZ7jLfq0D4PNjiOb0Wtc9iteqwm5p9RoCo7UQAvD_BwE
+
+
