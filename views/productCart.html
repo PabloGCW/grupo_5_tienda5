@@ -62,12 +62,14 @@
         <h2>MI CARRITO</h2>
         <section class="sectionProdCart1">
             <img src="/images/almohadon1.jpeg" class="imagen-ProductCart" alt="almohadon">
-            <div class="detalles">
+            <div class="detalles-productCart">
                 <p>Descripcion</p>
                 <p>Color:</p>
-                <i class="fa-solid fa-minus"></i>
-                <p id="cant">cantidad</p>
-                <i class="fa-solid fa-plus"></i>
+                <div class="resta-suma">
+                    <span class="material-symbols-outlined">remove</span>
+                    <p id="cant">cantidad</p>
+                    <span class="material-symbols-outlined">add</span>
+                </div>    
             </div>
             <div class="precio">
                 <p>Precio</p>
@@ -77,12 +79,15 @@
         
         <section class="sectionProdCart2">
             <img src="/images/manta4.jpeg" class="imagen-ProductCart" alt="maceta">
-            <div class="detalles">
+            <div class="detalles-productCart">
                 <p>Descripcion</p>
                 <p>Color:</p>
-                <i class="fa-solid fa-minus"></i>
-                <p id="cant">cantidad</p>
-                <i class="fa-solid fa-plus"></i>
+                <div class="resta-suma">
+                    <span class="material-symbols-outlined">remove</span>
+                    <p id="cant">cantidad</p>
+                    <span class="material-symbols-outlined">add</span>
+                </div>
+                
             </div>
             <div class="precio">
                 <p>Precio</p>
@@ -108,8 +113,8 @@
                 <span class="material-symbols-outlined">attach_money</span>
             </div>
             <div class="botonesCompras-ProdCart">
-                <button type="submit">Iniciar compra</button>
-                <button type="submit">Seguir comprando</button>
+                <button class="compra" type="submit">Iniciar compra</button>
+                <button class="compra" type="submit">Seguir comprando</button>
             </div>
         </div>
     </main>

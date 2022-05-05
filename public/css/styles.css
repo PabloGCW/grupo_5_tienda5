@@ -212,32 +212,94 @@ footer{
 
 /* Estilos para Detalle de producto */
 
-.botonAgregarCarrito{
-    color: #ffffff;
-    background-color: #c8aa86;
-    border-radius: 30px;
-    padding: 5px;
-}
 .tituloImagen{
     width: 50%;
     margin-left: 20%;
-    margin-bottom: 15px;
-}
-.imagenImagen{
-    width: 300px;
-    height: 400px;
-}
-.detallesImagen{
-    margin-left: -300px;
+    margin-bottom: 2%;
 }
 .productoDetalle{
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
+    margin-bottom: 5%;
+    width: 100%;
 }
-
+.imagenImagen{
+    width: 100%;
+    margin-left: 20%;
+}
+.detallesImagen{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: stretch;
+    height: 400px;
+    box-sizing: content-box;
+    margin-right: 10%;
+    width: 100%;
+}
+.nombreProducto{
+    font-size: xx-large;
+}
+.precioVenta{
+    font-size: x-large;
+    font-weight: bold;
+}
+.formasPago{
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+.cantidadVenta{
+    font-weight: bold;
+}
+.cantidadFlex{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-bottom: 5%;
+}
+.fa-solid.fa-circle-minus{
+    margin-right: 5px;
+}
+.fa-solid.fa-circle-1{
+    margin-right: 5px;
+}
+.botonAgregarCarrito{
+    color: #ffffff;
+    background-color: #c8aa86;
+    border-radius: 30px;
+    padding: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+.botonAgregarCarrito a{
+    color: #ffffff;
+    background-color: #c8aa86;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+}
+.costoEnvio{
+    font-weight: bold;
+}
+.descuentoFlex{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 100%;
+}
+.fa-solid.fa-money-bill-1{
+    margin-right: 5px;
+}
+.constoEnvioFlex{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+.fa-solid.fa-truck{
+    margin-right: 5px;
+}
 
 /* Estilos para Formularios de Registro  y Login */
 
@@ -333,8 +395,30 @@ div.sectionProdCart1 {
     display: flex;
 }
 
-div.detalles {
+div.detalles-productCart {
     margin: 20px;
+}
+
+div.detalles-productCart p  {
+    margin-top: 25px;
+
+}
+
+.resta-suma {
+    display: flex;
+    padding-left: 5px;
+    margin-top: 20px;
+    
+}    
+
+.resta-suma span {
+    padding: 5px;
+    background-color: #c8aa86;
+    border-radius: 55px;
+}
+
+#cant {
+    text-align: center;
 }
 
 div.precio {
@@ -366,11 +450,11 @@ div.costo, .descuento {
     align-items: center;
 }
 
-.subtotal, .total, p {
+.subtotal .total {
     margin: 10px;
 }
 
-.subtotal, .total, .material-symbols-outlined {
+.subtotal .total .material-symbols-outlined {
     margin-top: 15px 0px;
     margin-right: 40px;
 }
@@ -380,7 +464,7 @@ div.costo, .descuento {
     justify-content: space-around;
 }
 
-div.botonesCompras-ProdCart button {
+.compra {
     margin: 5%;
     width: 20%;
     padding: 0.9vw;
@@ -394,7 +478,7 @@ div.botonesCompras-ProdCart button {
     border-radius: 25px;
 }
 
-div.botonesCompras-ProdCart button:hover {
+.compra button:hover {
     background-color: #a78964; 
 }
 
