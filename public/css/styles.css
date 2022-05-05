@@ -323,7 +323,12 @@ div.sectionProdCart1 {
     display: flex;
 }
 
-.sectionProdCart1, .sectionProdCart2, img {
+.sectionProdCart1, .sectionProdCart2 {
+    width: 40%;
+    display: flex;
+}
+
+.imagen-ProductCart {
     width: 40%;
     display: flex;
 }
