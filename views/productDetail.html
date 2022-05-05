@@ -28,12 +28,12 @@
         <div><img src="/images/logo.jpeg" alt=""></div>
 
         <div><ul>
-            <li class="liOcultoNavBar"><a href="http://localhost:3000" target="_blank">Inicio</a></li>
+            <li class="liOcultoNavBar"><a href="/">Inicio</a></li>
             <li class="liOcultoNavBar">Productos</li>
-            <li class="liOcultoNavBar"><a href="http://localhost:3000/Registrarse" target="_blank">Registrarse</a></li>
+            <li class="liOcultoNavBar"><a href="/Registrarse">Registrarse</a></li>
             <li><span class="material-symbols-outlined">search</span></li>
-            <li class="liOcultoNavBar"><a href="http://localhost:3000/login" target="_blank"><span class="material-symbols-outlined">person</span></a></li>
-            <li><a href="http://localhost:3000/Carrito" target="_blank"><span class="material-symbols-outlined">shopping_bag</span></a></li>
+            <li class="liOcultoNavBar"><a href="/login"><span class="material-symbols-outlined">person</span></a></li>
+            <li><a href="/Carrito"><span class="material-symbols-outlined">shopping_bag</span></a></li>
             <li class="menuOcultoNavBar"><span class="material-symbols-outlined">menu</span></li>
         </ul></div>
     </nav>
@@ -67,7 +67,11 @@
                     <i class="fa-solid fa-circle-1"></i>
                     <i class="fa-solid fa-circle-plus"></i>
                 </div>
-                <p class="botonAgregarCarrito"><a href="http://localhost:3000/productCart.html" target="_blank">Agregar al carrito</a></p>
+
+                <form action="/Carrito" method="get">
+                <div class="contenedorButton"><button type="submit" class="buttonform">Agregar al carrito</button></div>
+                </form>
+                
                 <div class="constoEnvioFlex">
                     <i class="fa-solid fa-truck"></i>
                     <p class="costoEnvio">Calculá el costo de envío</p>
