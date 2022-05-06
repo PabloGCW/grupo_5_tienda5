@@ -448,7 +448,7 @@ div.subtotal, .total {
     border-radius: 25px;
 }
 
-div.costo .descuento {
+div.costo-productCart, .descuento-productCart {
     margin: 20px 25px 20px 0px;
     display: flex;
     justify-content: space-between;
