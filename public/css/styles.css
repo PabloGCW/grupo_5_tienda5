@@ -377,31 +377,35 @@ button.buttonform:hover{
     margin-left: 50px;
 }
 
-div.sectionProdCart1 {
+.sectionProdCart1, .sectionProdCart2 {
     margin-top: 40px;
     margin-bottom: 20px;
     display: flex;
-    justify-content:space-between
+    justify-content:space-between;
+    
 }
 
-.sectionProdCart2 {
+/*.sectionProdCart2 {
     margin-top: 40px;
     margin-bottom: 40px;
     display: flex;
-}
+}*/
 
-.sectionProdCart1, .sectionProdCart2 {
+/*.sectionProdCart1, .sectionProdCart2 {
     width: 40%;
     display: flex;
-}
+}*/
 
 .imagen-ProductCart {
-    width: 40%;
+    width: 15%;
     display: flex;
 }
 
 div.detalles-productCart {
-    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 100px;
 }
 
 div.detalles-productCart p  {
@@ -411,36 +415,43 @@ div.detalles-productCart p  {
 
 .resta-suma {
     display: flex;
-    padding-left: 5px;
-    margin-top: 20px;
+    align-items: center;
+    width: 100px;
+    
+    
     
 }    
 
-.resta-suma span {
-    padding: 5px;
-    background-color: #c8aa86;
+.resta-suma .fa-circle-minus .fa-circle-plus {
+    display: flex;
+    align-items: flex-end;
+    background-color: white;
     border-radius: 55px;
 }
 
 #cant {
+    padding-bottom: 25px;
+    padding-right: 5px;
     text-align: center;
 }
 
 div.precio {
     display: flex;
     flex-direction: row;
+    justify-items: flex-end;
     align-items: center;
 }
 
+.parrafos p {
+    margin-left: 10px;
+    padding: 5px;
+}
+
 .parrafos {
-    margin: 40px 20px 20px 0px;
+    margin: 50px 0px;
 }
 
-div.parrafos {
-    margin: 30px 0px;
-}
-
-div.subtotal, .total {
+.subtotal, .total {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -448,20 +459,18 @@ div.subtotal, .total {
     border-radius: 25px;
 }
 
-div.costo-productCart, .descuento-productCart {
-    margin: 20px 25px 20px 0px;
+.costo-productCart, .descuento-productCart {
+    /*margin: 20px 25px 20px 0px;*/
+    padding-top: 5px;
+    padding-bottom: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.subtotal .total {
-    margin: 10px;
-}
-
-.subtotal .total .material-symbols-outlined {
+.parrafos .material-symbols-outlined {
     margin-top: 15px 0px;
-    margin-right: 40px;
+    margin-right: 10px;
 }
 
 .botonesCompras-ProdCart {
@@ -469,25 +478,22 @@ div.costo-productCart, .descuento-productCart {
     justify-content: space-around;
 }
 
-.compra {
-    margin: 5%;
-    width: 20%;
-    padding: 0.9vw;
-    display: flex;
-    flex-direction: row;
+button.compra {
+    padding: 10px;
+    background-color: #DCDCDC;
+    border: #DCDCDC solid 1px;
+    border-radius: 5px;
+    width: 40%;
+    margin-bottom: 15px;
+    margin-top: 40px;
+    transition: all 450ms;
+}
+
+button.compra:hover{
     background-color: #c8aa86;
-    display: inline-block;
-    cursor: pointer;
-    font-size: 25px;
-    border: #c8aa86;
-    border-radius: 25px;
+    color: #ffffff;
+    border-radius: 15px;
 }
-
-.compra button:hover {
-    background-color: #a78964; 
-}
- 
-
 
 /* Media Queries */
 
