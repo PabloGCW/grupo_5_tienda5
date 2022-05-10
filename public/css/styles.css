@@ -508,30 +508,6 @@ button.compra:hover{
             justify-content: space-around;
             text-align: center;
         }
-        .productoDetalle{
-            display: flex;
-            justify-content: space-around;
-            flex-direction: row;
-            align-items: stretch;
-            margin-bottom: 5%;
-            width: 100%;
-        }
-        .detallesImagen{
-            display: flex;
-            justify-content: space-around;
-            flex-direction: column;
-            align-items: stretch;
-            height: 400px;
-            box-sizing: content-box;
-            margin-right: 10%;
-            margin-top: 0%;
-            margin-left: 0%;
-            width: 100%;
-        }
-        .imagenImagen{
-            width: 100%;
-            margin-left: 20%;
-}
 
 @media (min-width: 992px){
     .liOcultoNavBar{
@@ -566,5 +542,29 @@ button.compra:hover{
     article:hover .BotonCompra{
         opacity: 1;
     }
-    
+    .productoDetalle{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: stretch;
+        margin-bottom: 5%;
+        width: 100%;
+    }
+    .detallesImagen{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: stretch;
+        height: 400px;
+        box-sizing: content-box;
+        margin-right: 10%;
+        margin-top: 0%;
+        margin-left: 0%;
+        width: 100%;
+    }
+    .imagenImagen{
+        width: 100%;
+        margin-left: 20%;
+}
+
 }
