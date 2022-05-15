@@ -508,7 +508,7 @@ button.compra:hover{
             justify-content: space-around;
             text-align: center;
         }
-
+}
 @media (min-width: 992px){
     .liOcultoNavBar{
         display: block;

@@ -5,7 +5,7 @@ Implementar daily scrums de la siguiente manera:
 Los viernes veremos los temas dados en clase el martes anterior
 Los lunes veremos los temas dados en clase el jueves anterior
 Establecer una agenda más estricta para las reuniones que no excedan una hora
-Testeos cruzados
+Testeos cruzados, dos integrantes del equipo testean la producción del tercero.
 
 Hacer más de:
 Repaso en equipo de lo que se verá en la clase siguiente
