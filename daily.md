@@ -8,4 +8,15 @@ Se realizan dos veces por semana luego de cada clase
 
 Reunión del domingo 15-05-2022
 
-Esperando a Pablo que se fue de gira con las chicas, tomó mucho Fernet y no se puede levantar
+Instalación de EJS
+Renombrar archivos html como ejs
+Creación carpetas controllers y routes
+Creación del archivo mail.js para rutas
+Creación del archivo mainControllers.js para controladores
+Modificación del entry point para adaptarlo a rutas y controladores
+Completar archivos main.js y mainController.js
+Testeo de funcionalidad
+
+Próximos pasos: 
+Modularizar el proyecto y crear las vistas parciales
+
