@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<%- include("./partials/head") %>
+<%- include("../partials/head") %>
 
 
 <body>
 
-    <%- include("./partials/welcome") %>
+    <%- include("../partials/welcome") %>
 
-    <%- include("./partials/header") %>
+    <%- include("../partials/header") %>
 
 
     <main>
@@ -39,7 +39,7 @@
                     <i class="fa-solid fa-circle-plus"></i>
                 </div>
 
-                <form action="/Carrito" method="get">
+                <form action="/products/Carrito" method="get">
                 <div class="contenedorButton"><button type="submit" class="buttonform">Agregar al carrito</button></div>
                 </form>
                 
@@ -53,7 +53,7 @@
     </main>
 
 
-    <%- include("./partials/footer") %>
+    <%- include("../partials/footer") %>
     
 </body>
 </html>
