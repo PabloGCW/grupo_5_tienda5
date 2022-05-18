@@ -8,6 +8,12 @@ const mainController = {
     },
     productSend:(req, res)=>{
         res.render ("products/productSend")
+    },
+    productCreate:(req, res)=>{
+        res.render ("products/productCreate")
+    },
+    productEdition:(req, res)=>{
+        res.render ("products/productEdit")
     }
 }
 
