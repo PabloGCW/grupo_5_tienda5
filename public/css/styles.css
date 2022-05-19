@@ -125,6 +125,10 @@ main h2{
     text-align: center;
     font-size: 24px;
 }
+/*
+.mainProdCart h2{
+    padding: 260px;
+}*/
 
 .serviciosMobile{
     text-align: center;
@@ -306,6 +310,40 @@ footer{
     margin-right: 5px;
 }
 
+/* Aqui comienzan los estilos de la vista productSend */
+
+.section-ProdSend{
+    padding-top: 4rem;
+    margin-left: 3rem;
+}
+
+.recibeCompra{
+    margin: 2rem 0px 3rem 0px;
+    padding: 20px 0px ;
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+#precio{
+    margin-left: 50rem;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+#postal{
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+#sinCosto{
+    margin-left: 830px;
+    margin-right: 10px;
+}
+
 /* Estilos para Formularios de Registro  y Login */
 
 h3.formulario{
@@ -397,7 +435,8 @@ button.buttonform:hover{
 }*/
 
 .imagen-ProductCart {
-    width: 15%;
+    width: 15vw;
+    height: 20vw;
     display: flex;
 }
 
