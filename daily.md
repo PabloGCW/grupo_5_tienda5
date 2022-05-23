@@ -9,6 +9,12 @@ Se realizan dos veces por semana luego de cada clase
 Próximos pasos: 
 Sprint 4
 
+Reunión del lunes 23-05-2022
+
+Actualización del archivo daily.md
+Actualización del archivo retro.md
+Actualización del tablero de trabajo
+Definimos nueva metodología de trabajo para repasar temas vistos en clases y afianzar teoría
 
 Reunión del miércoles 18-05-2022
 

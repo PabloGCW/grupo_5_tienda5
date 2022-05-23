@@ -1,3 +1,29 @@
+Retrospectiva Sprint 3
+
+Empezar a hacer:
+Retroalimentación de los temas vistos en clase en reunión de equipo
+
+Hacer más de:
+Continuar cumpliendo con la asistencia y puntualidad en las reuniones
+
+Seguir haciendo:
+Implementar daily scrums de la siguiente manera:
+    Los viernes veremos los temas dados en clase el martes anterior
+    Los lunes veremos los temas dados en clase el jueves anterior
+Continuar con el contacto frecuente mediante el grupo de whatsapp
+Colaboración dentro del equipo
+Discontinuar las reuniones por Zoom y reemplazarlas por el Google Meet
+
+
+Hacer menos de:
+Testeos cruzados, dos integrantes del equipo testean la producción del tercero.
+
+Dejar de hacer:
+Establecer una agenda más estricta para las reuniones que no excedan una hora
+Repaso en equipo de lo que se verá en la clase siguiente
+Sacar a producción temas sin suficiente testeo
+
+
 Retrospectiva Sprint 2
 
 Empezar a hacer:
