@@ -137,6 +137,19 @@ main h2{
     display: none;
 }
 
+article.card{
+    text-align: center;
+    background-color: white;
+    margin: auto;
+    width: 80%;
+    padding: 5px;
+}
+
+.productsFlex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 article{
     text-align: center;
     background-color: white;
@@ -539,6 +552,10 @@ button.compra:hover{
 
 
 @media (min-width: 425px){
+
+    article.card{
+        width: 45%;
+    }
     .serviciosMobile{
         display: none;
         }
@@ -549,6 +566,10 @@ button.compra:hover{
         }
 }
 @media (min-width: 992px){
+
+    article.card{
+        width: 24%;
+    }
     .liOcultoNavBar{
         display: block;
     }
