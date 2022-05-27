@@ -12,18 +12,22 @@
     <main class="mainProdCart">
         <h2>¿Cómo quieres recibir o retirar tu compra?</h2>
         <section class="section-ProdSend">
-            <div class="codigo-postal">
+            <div class="recibeCompra">
                 <label><input type="radio" name="envio"> Código Postal</label>
                 <input type="text" name="postal" id="postal" placeholder="Ingresá tu código postal">
-                <p>Precio</p>
+                <p id="precio">Precio</p>
                 <span class="material-symbols-outlined">attach_money</span>
             </div>
-            <div class="en-tienda">
+            <div class="recibeCompra">
                 <label><input type="radio" name="envio"> Retirá de nuestra tienda sin costo</label>
+                <p id="sinCosto">Sin costo</p>
                 <span class="material-symbols-outlined">local_shipping</span>
-                <p>Sin costo</p>
             </div>
         </section>
+        <div class="botonesCompras-ProdCart">
+            <button class="compra" type="submit">Seguir comprando</button>
+            <button class="compra" type="submit">Terminar compra</button>
+        </div>
     </main>
 
     <%- include("../partials/footer") %>
