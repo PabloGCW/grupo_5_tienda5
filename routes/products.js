@@ -7,11 +7,11 @@ router.get("/carrito", mainController.productCart);
 
 router.get("/productSend", mainController.productSend);
 
-router.get("/detalleProducto", mainController.productDetail);
+router.get("/detalleProducto/:id", mainController.productDetail);
 
 router.get("/creacionProducto", mainController.productCreate);
 
-router.get("/edicionProducto", mainController.productEdition);
+router.get("/edicionProducto/:id", mainController.productEdition);
 
 
 

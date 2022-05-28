@@ -15,18 +15,22 @@
 
 
         <div class="tituloImagen">
-            <h3><strong>Inicio > Textiles > Almohadones ></strong></h3>
-            <h3><strong>Almohadón Chill Here></strong></h3>
+            <h3><strong>Inicio > <%= productoSeleccionado.category %> ></strong></h3>
+            <h3><strong> <%= productoSeleccionado.name %> </strong></h3>
         </div>
 
         <div class="productoDetalle">
             <div class="imagenImagen">
-                <img src="/images/products/almohadon1.jpg" width="300" height="400" alt="almohadon1">
+                <img src="/images/products/<%= productoSeleccionado.image %>"  alt="">
+                <br><br>
+                <div><%= productoSeleccionado.description %></div>
+                <br>
+                <div><%= productoSeleccionado.features %></div>
             </div>
 
             <div class="detallesImagen">
-                <p class="nombreProducto">Almohadón Chill Here</p>    
-                <p class="precioVenta">$2.778,00</p>
+                <p class="nombreProducto"><%= productoSeleccionado.name %></p>    
+                <p class="precioVenta">$<%= productoSeleccionado.price %></p>
                 <div class="descuentoFlex">
                     <i class="fa-solid fa-money-bill-1"></i>
                     <p class="descuento">10% de descuento pagando por transferencia bancaria o efectivo</p>
