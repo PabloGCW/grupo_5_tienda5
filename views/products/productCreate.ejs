@@ -22,17 +22,17 @@
         
         <main>
             <h3 class="formulario">Ingresá nuevos productos al Sitio</h3>
-            <form action="/" method="post" class="formulario">
+            <form action="/products/creacionProducto" method="POST" enctype="multipart/form-data" class="formulario">
                 <div class="formColumnas">
                     
                     <div class="formulariodiv">
                         <label>Código producto (SKU):</label>
-                        <input type="text" name="sku" class="inputcontrol" required oninvalid="setCustomValidity('Debe ingresar un SKU válido')" oninput="setCustomValidity('')">
+                        <input type="text" name="SKU" class="inputcontrol" required oninvalid="setCustomValidity('Debe ingresar un SKU válido')" oninput="setCustomValidity('')">
                     </div>
 
                     <div class="formulariodiv">
                         <label>Categoría:</label>
-                        <select type="text" name="categoria" class="inputcontrol" required oninvalid="setCustomValidity('Debe seleccionar una categoría')" oninput="setCustomValidity('')">
+                        <select type="text" name="category" class="inputcontrol" required oninvalid="setCustomValidity('Debe seleccionar una categoría')" oninput="setCustomValidity('')">
                             <option value="textiles">Textiles</option>
                             <option value="giftbox">Giftbox</option>
                             <option value="aromaticos">Aromáticos</option>
@@ -48,15 +48,15 @@
                     
                     <div class="formulariodiv">
                     <label>Nombre producto:</label>
-                    <input type="text" name="nomProd" class="inputcontrol" required oninvalid="setCustomValidity('Debe ingresar un nombre')">
+                    <input type="text" name="name" class="inputcontrol">
                     </div>
                 
-                
+                <!--    required oninvalid="setCustomValidity('Debe ingresar un nombre')" -->
                 
                     
                     <div class="formulariodiv">
                     <label>Descripción:</label>
-                    <textarea name="descripcion" class="inputcontrol" required oninvalid="setCustomValidity('Debe ingresar una descripción')" oninput="setCustomValidity('')"></textarea>
+                    <textarea name="description" class="inputcontrol" required oninvalid="setCustomValidity('Debe ingresar una descripción')" oninput="setCustomValidity('')"></textarea>
                     </div>
                 
                 
@@ -64,13 +64,13 @@
                     
                     <div class="formulariodiv">
                         <label>Imágen:</label>
-                        <input type="file" name="imagen" class="inputcontrol" accept="image/*" required oninvalid="setCustomValidity('Debe ingresar un formato valido de imágen')" oninput="setCustomValidity('')">
+                        <input type="file" name="image" class="inputcontrol" accept="image/*" required oninvalid="setCustomValidity('Debe ingresar un formato valido de imágen')" oninput="setCustomValidity('')">
                     </div>
                 
                     
                     <div class="formulariodiv">
                         <label>Precio venta:</label>
-                        <input type="number" name="precio" class="inputcontrol" required oninvalid="setCustomValidity('Ingrese un precio de venta')" oninput="setCustomValidity('')">
+                        <input type="number" name="price" class="inputcontrol" required oninvalid="setCustomValidity('Ingrese un precio de venta')" oninput="setCustomValidity('')">
                     </div>
 
                     <div class="formulariodiv">

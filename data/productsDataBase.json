@@ -128,5 +128,25 @@
         "stock": "10",
         "offer": "No",
         "discount": ""
-    }                           
+    },
+    {
+        "id": 11,
+        "SKU": "78kjsdf",
+        "category": "frascos",
+        "name": "Federico",
+        "description": "Frasco",
+        "price": "1",
+        "stock": "1",
+        "image": "image-1653952515285.png"
+    },
+    {
+        "id": 12,
+        "SKU": "78kjsdf",
+        "category": "frascos",
+        "name": "Federico",
+        "description": "Frasco",
+        "price": "10",
+        "stock": "10",
+        "image": "image-1653952569088.png"
+    }
 ]
