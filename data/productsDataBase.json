@@ -148,5 +148,55 @@
         "price": "10",
         "stock": "10",
         "image": "image-1653952569088.png"
+    },
+    {
+        "id": 13,
+        "SKU": "ui6777",
+        "category": "textiles",
+        "name": "Frasco",
+        "description": "ñldjfñasdlj",
+        "price": "99",
+        "stock": "2",
+        "image": "image-1654010219343.jpg"
+    },
+    {
+        "id": 14,
+        "SKU": "ui6777",
+        "category": "aromaticos",
+        "name": "Probando nombre",
+        "description": "Cambié el nombre del archivo guardado",
+        "price": "99999999",
+        "stock": "5",
+        "image": "logo amelia sin fondo.png-1654010352747.png"
+    },
+    {
+        "id": 15,
+        "SKU": "k70000",
+        "category": "accesorios",
+        "name": "Otra prueba",
+        "description": "Probando cambiar any por single",
+        "price": "70",
+        "stock": "1",
+        "image": "A09A2FED-EA20-4828-B63A-5E1A4BB874A6.JPG-1654011495642"
+    },
+    {
+        "id": 16,
+        "SKU": "k70000",
+        "category": "posaIndiv",
+        "name": "ñsdlfs",
+        "description": "any()",
+        "price": "58",
+        "stock": "2",
+        "image": "0be0a1b4-a2e1-44ce-b91f-ccd2140b5934.jpg-1654011535643"
+    },
+    {
+        "id": 17,
+        "SKU": "9779",
+        "category": "tazaMate",
+        "name": "nombre",
+        "description": "cambio de nombre",
+        "price": "3000",
+        "stock": "4",
+        "image": "1654011822248-0b801384-b016-4efa-be78-80d73e28eeea.jpg"
     }
 ]
