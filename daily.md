@@ -9,6 +9,16 @@ Se realizan dos veces por semana luego de cada clase
 Próximos pasos: 
 Sprint 4
 
+Reunión del miercoles 01-06-2022
+
+Creacion Updates Productos
+Mejorar el código con:
+    - el formulario de edicion tiene q mostrar la categoria y la foto precargada
+    - añadir el campo features en ambos formularios
+    - por qué se nos acumulan las rutas al crear/modificar articulos entre el action del form. y el redirect del controlador
+
+
+
 Reunión del lunes 23-05-2022
 
 Actualización del archivo daily.md

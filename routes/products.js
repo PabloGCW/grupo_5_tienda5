@@ -31,6 +31,7 @@ router.post("/creacionProducto", upload.any(), mainController.store)
 
 
 router.get("/edicionProducto/:id", mainController.productEdition);
+router.patch("/edicionProducto/:id", upload.any(), mainController.productUpdate);
 
 
 

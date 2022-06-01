@@ -29,6 +29,38 @@ const mainController = {
 
         res.render ("products/productEdit", {productoSeleccionado})
     },
+    productUpdate:(req,res) => {
+
+        let id = req.params.id;
+        let productEdited = products.find(element => element.id == id)
+
+        let image
+        if(req.files[0] != undefined){
+			image = req.files[0].filename
+		}
+        else{
+			image = productEdited.image
+		}
+
+        productEdited = {
+            id: productEdited.id,
+            ...req.body,
+            image: image
+        }
+
+        let arrayEdited = products.map( element => {
+            if(element.id == productEdited.id){
+                return element = {...productEdited};
+            }
+            return element
+        })
+
+        fs.writeFileSync(productsFilePath, JSON.stringify(arrayEdited))
+
+        res.redirect("/" + productEdited.id)
+
+    },
+
     store: (req, res) => {
 
 		let image
