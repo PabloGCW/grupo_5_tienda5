@@ -57,7 +57,8 @@ const mainController = {
 
         fs.writeFileSync(productsFilePath, JSON.stringify(arrayEdited))
 
-        res.redirect("/" + productEdited.id)
+        res.redirect("back")
+        //  + productEdited.id
 
     },
 
