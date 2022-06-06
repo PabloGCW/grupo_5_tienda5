@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Pablo",
+        "lastName": "Cadena",
+        "DNI": "36912875",
+        "email": "cadenapg@gmail.com",
+        "mobile": "3874659207",
+        "address": "Pasaje Patricias Argentinas 754",
+        "CP": "4400",
+        "password": "password123"
+    }
+]
