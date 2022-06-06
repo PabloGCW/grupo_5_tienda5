@@ -7,7 +7,19 @@ Se realizan dos veces por semana luego de cada clase
 ● Qué va a hacer hoy.
 
 Próximos pasos: 
-Sprint 4
+Terminar sprint 4
+
+Reunión del lunes 06-06-2022
+
+Creacion "eliminacion de productos (ruta y vista/formulario)"
+Creacion json de usuarios
+A realizar:
+    - Detalle de productos en vista /products
+    - En formulario de eliminacion, acomodar imagen a la izquierda y campos de texto a la derecha
+    - Añadir campo features del json en formularios de creacion-edicion-eliminacion
+    - Añadir campo DNI, CP y mobile en formulario de registro 
+
+
 
 Reunión del miercoles 01-06-2022
 

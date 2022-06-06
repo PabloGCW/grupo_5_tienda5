@@ -33,6 +33,9 @@ router.post("/creacionProducto", upload.any(), mainController.store)
 router.get("/edicionProducto/:id", mainController.productEdition);
 router.patch("/edicionProducto/:id", upload.any(), mainController.productUpdate);
 
+router.get("/eliminacionProducto/:id", mainController.productDelete)
+router.delete("/eliminacionProducto/:id", mainController.productDeleted)
+
 
 
 module.exports = router;

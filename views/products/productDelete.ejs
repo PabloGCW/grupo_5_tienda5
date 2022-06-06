@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include("../partials/head") %>
+
+<body>
+
+    <%- include("../partials/welcome") %>
+
+    <%- include("../partials/header") %>
+
+    <main>
+        <h3 class="formulario">Eliminar productos del Sitio</h3>
+        <form action="/products/eliminacionProducto/<%= productoSeleccionado.id %>?_method=DELETE"  method="POST" enctype="multipart/form-data" class="formulario">
+            <div class="formColumnas">
+                
+                <div class="formulariodiv">
+                    <label>Código producto (SKU):</label>
+                    <p class="inputcontrol"><%= productoSeleccionado.SKU %></p>
+                </div>
+
+                <div class="formulariodiv">
+                    <label>Categoría:</label>
+                    <p class="inputcontrol"><%= productoSeleccionado.category %></p>
+                </div>
+               
+            </div>
+            
+                
+                <div class="formulariodiv">
+                <label>Nombre producto:</label>
+                <p class="inputcontrol"><%= productoSeleccionado.name%></p>
+                </div>
+            
+            
+            
+                
+                <div class="formulariodiv">
+                <label>Descripción:</label>
+                <p class="inputcontrol"><%= productoSeleccionado.description%></p>
+                </div>
+            
+            
+        <div class="formColumnas">
+                
+                <div class="formulariodiv">
+                    <label>Imágen:</label>
+                    <p class="inputcontrol"><img src="/images/products/<%= productoSeleccionado.image%>" alt=""></p>
+                </div>
+            
+                
+                <div class="formulariodiv">
+                    <label>Precio venta:</label>
+                    <p class="inputcontrol"><%= productoSeleccionado.price%></p>
+                </div>
+
+                <div class="formulariodiv">
+                    <label>Stock inicial:</label>
+                    <p class="inputcontrol"><%= productoSeleccionado.stock%></p>
+                </div>
+
+        </div>
+        
+            <div class="contenedorButton"><button type="submit" class="buttonform">Confirmar</button></div>
+
+            
+            
+        </form>
+
+
+    </main>
+
+
+
+
+    <%- include("../partials/footer") %>
+
+</body>
+</html>

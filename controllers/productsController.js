@@ -84,7 +84,26 @@ const mainController = {
 		
 		res.redirect("/")
 
-	}
+	},
+
+    productDelete: (req,res) => {
+
+        let id = req.params.id;
+        let productoSeleccionado = products.find( element => element.id == id)
+
+        res.render ("products/productDelete", {productoSeleccionado})
+
+    },
+
+    productDeleted: (req,res) => {
+        let id = req.params.id;
+        let productoEliminado = products.filter( element => element.id != id)
+
+        fs.writeFileSync(productsFilePath, JSON.stringify(productoEliminado));
+
+        res.redirect("/")
+
+    }
 }
 
 module.exports = mainController
