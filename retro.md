@@ -1,3 +1,21 @@
+Retrospectiva Sprint 4
+
+Empezar a hacer:
+Mejorar la estética de nuestro sitio, trabajar en la UI/UX
+
+Hacer más de:
+
+
+Seguir haciendo:
+Reuniones de equipo de una hora y media los días lunes y miércoles
+
+Hacer menos de:
+
+
+Dejar de hacer:
+La reunión de los días viernes
+
+
 Retrospectiva Sprint 3
 
 Empezar a hacer:

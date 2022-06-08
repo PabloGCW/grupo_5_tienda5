@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include("../partials/head") %> 
+
+
+<body>
+
+    <%- include("../partials/welcome") %>
+
+    <%- include("../partials/header") %>
+
+
+    <main>
+
+        <h2>NOVEDADES</h2>
+
+        <div id="slider">
+  
+            <ul class="slider">
+              <li id="slide1"><img src="/images/products/cerilla2.jpg" alt="cerillas"></li>
+              <li id="slide2"><img src="/images/products/mate2.jpg" alt="mates"></li>
+              <li id="slide3"><img src="/images/products/spray5.jpg" alt="spray"></li>
+            </ul>
+            
+            <ul class="menu">
+              <li><a href="#slide1">1</a></li>
+              <li><a href="#slide2">2</a></li>
+              <li><a href="#slide3">3</a></li>
+            </ul>
+            
+        </div>
+
+        <section>
+            <div class="serviciosMobile"><p>PAGÁ EN EFECTIVO O TRANSFERENCIA    CON ENVÍO A TODO EL PAÍS    Y CON DEVOLUCIONES!!!</p></div>
+
+            <div class="serviciosDesktop">
+            <div><span class="material-symbols-outlined">account_balance</span>
+                <h4>EFECTIVO/TRANSFERENCIA</h4>
+                <p>10% DE DESCUENTO EN SU COMPRA</p>
+            </div>
+
+            <div><span class="material-symbols-outlined">local_shipping</span>
+                <h4>ENVÍO A TODO EL PAÍS</h4>
+                <p>COMPRÁ SIN SALIR DE TU CASA</p>
+            </div>
+
+            <div><span class="material-symbols-outlined">cached</span>
+                <h4>DEVOLUCIONES</h4>
+                <p>HASTA 14 DÍAS DESPUÉS DE SU COMPRA</p>
+            </div></div>
+        </section>
+
+
+        
+        
+            <div class="productsFlex">
+
+                <% products.forEach(element => { %>
+                 
+                <article class="card">
+                    <img src="/images/products/<%= element.image %>"  alt="Imagen no Disponible">
+                    <div>
+                        <h3><%= element.name %> </h3>
+                        <p class="precio">$<%= element.price %> </p>
+                        <p class="desc">10% off en efectivo/transf</p>
+                        <p class="BotonCompra"><a href="/products/DetalleProducto/<%=element.id  %>" >Comprar</a></p>
+                    </div>
+                </article>
+                <% }) %>
+
+        </div>
+
+        <div id="botonVerMas">VER MÁS</div>
+    </main>
+
+
+    <%- include("../partials/footer") %>
+    
+</body>
+</html>

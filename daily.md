@@ -9,15 +9,18 @@ Se realizan dos veces por semana luego de cada clase
 Próximos pasos: 
 Terminar sprint 4
 
+Reunión del miércoles 08-06-2022
+Se ha corregido lo previsto en la reunión anterior
+
 Reunión del lunes 06-06-2022
 
 Creacion "eliminacion de productos (ruta y vista/formulario)"
 Creacion json de usuarios
 A realizar:
-    - Detalle de productos en vista /products
+    - Detalle de productos en vista /products HECHO
     - En formulario de eliminacion, acomodar imagen a la izquierda y campos de texto a la derecha
-    - Añadir campo features del json en formularios de creacion-edicion-eliminacion
-    - Añadir campo DNI, CP y mobile en formulario de registro 
+    - Añadir campo features del json en formularios de creacion-edicion-eliminacion HECHO
+    - Añadir campo DNI, CP y mobile en formulario de registro HECHO
 
 
 

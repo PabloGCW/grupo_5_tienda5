@@ -24,6 +24,7 @@ router.get("/carrito", mainController.productCart);
 
 router.get("/productSend", mainController.productSend);
 
+router.get("/", mainController.productMain);
 router.get("/detalleProducto/:id", mainController.productDetail);
 
 router.get("/creacionProducto", mainController.productCreate);
