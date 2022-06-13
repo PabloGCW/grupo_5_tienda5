@@ -373,24 +373,29 @@ h3.formulario{
 .formColumnas div{
     display: inline-block;
     text-align: justify;
-    margin: 5px 10px;
+    /*margin: 5px 10px;*/
 }
 .formulariodiv{
     text-align: justify;
-    margin: 5px 10px;
+    margin: 5px 50px;
+    justify-content: center;
 }
 .formulariodiv label{
-    display: block; 
+    display: block;
+    margin-left: 2px;
+
 }
 .inputcontrol{
-    margin: 10px;
+    margin: 10px 0px 30px;
     padding: 5px;
     width: 100%;
     border: #DCDCDC solid 1px;
     border-radius: 10px;
     font-size: 12px;
 }
-
+div.contenedorButton{
+    display: block;
+}
 button.buttonform{
     padding: 10px;
     background-color: #DCDCDC;
@@ -408,6 +413,7 @@ button.buttonform:hover{
 }
 .labelLogin{
     font-size: 12px;
+    text-align: center;
 }
 .labelLogin a{
     color: #000;
