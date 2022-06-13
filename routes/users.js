@@ -4,6 +4,8 @@ const mainController = require("../controllers/usersController")
 
 
 router.get("/registrarse", mainController.register);
+router.post("/registrarse", mainController.processRegister);
+
 
 router.get("/login", mainController.login);
 

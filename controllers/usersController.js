@@ -5,6 +5,9 @@ const mainController = {
     },
     register: (req, res)=>{
         res.render ("users/register")
+    },
+    processRegister: (req, res)=>{
+        return res.send("Ok, viniste por POST")
     }
 }
 
