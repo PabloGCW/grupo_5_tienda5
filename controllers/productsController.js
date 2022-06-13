@@ -60,7 +60,7 @@ const mainController = {
 
         fs.writeFileSync(productsFilePath, JSON.stringify(arrayEdited))
 
-        res.redirect("back")
+        res.redirect("/Productos")
         //  + productEdited.id
 
     },
@@ -85,7 +85,7 @@ const mainController = {
 
 		fs.writeFileSync(productsFilePath, JSON.stringify(products, null, ''));
 		
-		res.redirect("/")
+		res.redirect("/Productos")
 
 	},
 
@@ -104,7 +104,7 @@ const mainController = {
 
         fs.writeFileSync(productsFilePath, JSON.stringify(productoEliminado));
 
-        res.redirect("/")
+        res.redirect("/Productos")
 
     }
 }
