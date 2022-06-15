@@ -165,7 +165,7 @@ article img{
 }
 
 h3{
-    font-family: 'Playfair Display', serif;
+    /*font-family: 'Playfair Display', serif;*/
     font-size: 16px;
     margin-bottom: 5px;
 }
@@ -361,17 +361,20 @@ footer{
 
 h3.formulario{
     text-align: center;
-    font-size: 22px;
+    font-size: 24px;
+    
 }
 
 .formulario{
-    padding: 20px;
+    padding: 25px 40px;
     margin: auto;
-    width: 50vw;
+    width: 47vw;
     text-align: left;
 }
-.formColumnas div{
-    display: inline-block;
+.formColumnas{
+    display: flex;
+    justify-content:left;
+    flex-wrap: wrap-reverse;
     text-align: justify;
     margin: 5px 10px;
 }
@@ -393,9 +396,12 @@ h3.formulario{
     margin: 0%;
 }
 .formulariodiv{
-    text-align: justify;
+    width: 180px;
+    display: flex;
+    flex-wrap: wrap;
+    /*text-align: justify;*/
     margin: 5px 50px;
-    justify-content: center;
+    /*justify-content: center;*/
 }
 .formulariodiv label{
     display: block;
@@ -403,7 +409,7 @@ h3.formulario{
 
 }
 .inputcontrol{
-    margin: 10px 0px 30px;
+    margin: 10px 0px 15px;
     padding: 5px;
     width: 100%;
     border: #DCDCDC solid 1px;
@@ -411,17 +417,20 @@ h3.formulario{
     font-size: 12px;
 }
 div.contenedorButton{
-    display: block;
+    display: flex;
+    justify-content: center;
+    
 }
 button.buttonform{
     padding: 10px;
     background-color: #DCDCDC;
     border: #DCDCDC solid 1px;
     border-radius: 5px;
-    width: 100%;
+    width: 40%;
     margin-bottom: 15px;
     margin-top: 15px;
     transition: all 450ms;
+    
 }
 button.buttonform:hover{
     background-color: #c8aa86;
@@ -613,6 +622,7 @@ button.compra:hover{
         justify-content: space-around;
     }
     .flexFooter{
+        margin-top: 40px;
         display: flex;
         justify-content: space-between;
     }
