@@ -12,66 +12,73 @@
     <main>
         <h3 class="formulario">Editar productos del Sitio</h3>
         <form action="/Productos/edicionProducto/<%= productoSeleccionado.id %>?_method=PATCH"  method="POST" enctype="multipart/form-data" class="formulario">
-            <div class="formColumnas">
-                
-                <div class="formulariodiv">
-                    <label>Código producto (SKU):</label>
-                    <input type="text" name="SKU" class="inputcontrol" value="<%= productoSeleccionado.SKU %> " required oninvalid="setCustomValidity('Debe ingresar un SKU válido')" oninput="setCustomValidity('')">
-                </div>
+            
+            <div class="ambosLados">
 
-                <div class="formulariodiv">
-                    <label>Categoría:</label>
-                    <!-- ARREGLAR VALUE -->
-                    <select type="text" name="category" class="inputcontrol" value="<%= productoSeleccionado.category %>" required oninvalid="setCustomValidity('Debe seleccionar una categoría')" oninput="setCustomValidity('')">
-                        <option value="textiles">Textiles</option>
-                        <option value="giftbox">Giftbox</option>
-                        <option value="aromaticos">Aromáticos</option>
-                        <option value="frascos">Frascos</option>
-                        <option value="tazaMate">Tazas y Mates</option>
-                        <option value="posaIndiv">Posavasos e Individuales</option>
-                        <option value="accesorios">Accesorios</option>
-                    </select>    
+                <div class="ladoIzquierdo">
+
+                    <div class="formulariodiv">
+                        <label>Imágen:</label>
+                        <p class="inputcontrol"><img src="/images/products/<%= productoSeleccionado.image%>" alt=""></p>
+                        <input type="file" name="image" class="inputcontrol" accept="image/*" value="<%= productoSeleccionado.image %>" required>
+                    </div>
+
                 </div>
+            
+            
+                <div class="ladoDerecho">
+
+                    <div class="formColumnas">
+                
+                        <div class="formulariodiv">
+                            <label>Código producto (SKU):</label>
+                            <input type="text" name="SKU" class="inputcontrol" value="<%= productoSeleccionado.SKU %> " required>
+                        </div>
+
+                        <div class="formulariodiv">
+                            <label>Categoría:</label>
+                        <!-- ARREGLAR VALUE -->
+                            <select type="text" name="category" class="inputcontrol" value="<%= productoSeleccionado.category %>" required>
+                                <option value="textiles">Textiles</option>
+                                <option value="giftbox">Giftbox</option>
+                                <option value="aromaticos">Aromáticos</option>
+                                <option value="frascos">Frascos</option>
+                                <option value="tazaMate">Tazas y Mates</option>
+                                <option value="posaIndiv">Posavasos e Individuales</option>
+                                <option value="accesorios">Accesorios</option>
+                            </select>    
+                        </div>
                
+                    </div>
+            
+                
+                    <div class="formulariodiv">
+                        <label>Nombre producto:</label>
+                        <input type="text" name="name" class="inputcontrol" value="<%= productoSeleccionado.name %>" required>
+                    </div>
+                
+                    <div class="formulariodiv">
+                        <label>Descripción:</label>
+                        <textarea name="description" class="inputcontrol"><%= productoSeleccionado.description %> </textarea>
+                        <label>Características:</label>
+                        <textarea name="features" class="inputcontrol"><%= productoSeleccionado.features %> </textarea>
+                    </div>
+            
+                    <div class="formColumnas">
+                
+                        <div class="formulariodiv">
+                            <label>Precio venta:</label>
+                            <input type="number" name="price" class="inputcontrol" value="<%= productoSeleccionado.price %>" required>
+                        </div>
+
+                        <div class="formulariodiv">
+                            <label>Stock inicial:</label>
+                            <input type="number" name="stock" class="inputcontrol" value="<%= productoSeleccionado.stock %>" required>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-            
-                
-                <div class="formulariodiv">
-                <label>Nombre producto:</label>
-                <input type="text" name="name" class="inputcontrol" value="<%= productoSeleccionado.name %>" required oninvalid="setCustomValidity('Debe ingresar un nombre')">
-                </div>
-            
-            
-            
-                
-                <div class="formulariodiv">
-                    <label>Descripción:</label>
-                    <textarea name="description" class="inputcontrol"><%= productoSeleccionado.description %> </textarea>
-                    <label>Características:</label>
-                    <textarea name="features" class="inputcontrol"><%= productoSeleccionado.features %> </textarea>
-                </div>
-            
-            
-        <div class="formColumnas">
-                
-                <div class="formulariodiv">
-                    <label>Imágen:</label>
-                    <p class="inputcontrol"><img src="/images/products/<%= productoSeleccionado.image%>" alt=""></p>
-                    <input type="file" name="image" class="inputcontrol" accept="image/*" value="<%= productoSeleccionado.image %>" required oninvalid="setCustomValidity('Debe ingresar un formato valido de imágen')" oninput="setCustomValidity('')">
-                </div>
-            
-                
-                <div class="formulariodiv">
-                    <label>Precio venta:</label>
-                    <input type="number" name="price" class="inputcontrol" value="<%= productoSeleccionado.price %>" required oninvalid="setCustomValidity('Ingrese un precio de venta')" oninput="setCustomValidity('')">
-                </div>
-
-                <div class="formulariodiv">
-                    <label>Stock inicial:</label>
-                    <input type="number" name="stock" class="inputcontrol" value="<%= productoSeleccionado.stock %>" required oninvalid="setCustomValidity('Ingrese el inventario inicial')" oninput="setCustomValidity('')">
-                </div>
-
-        </div>
         
             <div class="contenedorButton"><button type="submit" class="buttonform">Confirmar</button></div>
 

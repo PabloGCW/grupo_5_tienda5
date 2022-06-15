@@ -373,7 +373,24 @@ h3.formulario{
 .formColumnas div{
     display: inline-block;
     text-align: justify;
-    /*margin: 5px 10px;*/
+    margin: 5px 10px;
+}
+.ambosLados div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* text-align: justify; */
+    /* margin: 5px 10px; */
+}
+.ladoIzquierdo div{
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+}
+.ladoDerecho div{
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
 }
 .formulariodiv{
     text-align: justify;
