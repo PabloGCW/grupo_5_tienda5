@@ -18,39 +18,95 @@
                 
                 <div class="formulariodiv">
                     <label for="domicilio">Domicilio:</label>
-                    <input type="text" id="domicilio" name="address" placeholder="Ej: Av. Triunvirato 444 Dept 4-A" class="inputcontrol">
+                    <input type="text" 
+                        id="domicilio" 
+                        name="address" 
+                        placeholder="Ej: Av. Triunvirato 444 Dept 4-A" 
+                        class="inputcontrol <%= locals.errors && errors.address ? 'is-invalid' : null %> "
+                        value="<%= locals.oldData ? oldData.address : null %> "
+                    >
+                        <% if(locals.errors && errors.address){ %>
+                            <div class="errorValidation"><%= errors.address.msg %> </div>
+                        <% } %> 
                 </div>
                 
                 <div class="formulariodiv">
                     <label for="CP">Código Postal:</label>
-                    <input type="number" id="CP" name="CP" placeholder="Ej: 9999" class="inputcontrol">
+                    <input type="number" 
+                    id="CP" 
+                    name="CP" 
+                    placeholder="Ej: 9999" 
+                    class="inputcontrol"
+                    value="<%= locals.oldData ? oldData.CP : null %>"
+                >
+                    <% if(locals.errors && errors.CP){ %>
+                        <div class="errorValidation"><%= errors.CP.msg %> </div>
+                    <% } %> 
                 </div>
-                
-                
                 
                 <div class="formulariodiv">
                     <label for="email">Correo electrónico:</label>
-                    <input type="email" id="email" name="email" class="inputcontrol">
+                    <input type="email" 
+                    id="email" 
+                    name="email" 
+                    class="inputcontrol"
+                    value="<%= locals.oldData ? oldData.email : null %>"
+                >
+                    <% if(locals.errors && errors.email){ %>
+                        <div class="errorValidation"><%= errors.email.msg %> </div>
+                    <% } %> 
                 </div>
                 
                 <div class="formulariodiv">
                     <label for="number">Teléfono móvil:</label>
-                    <input type="number" id="number" name="mobile" class="inputcontrol">
+                    <input type="number" 
+                    id="number" 
+                    name="mobile" 
+                    class="inputcontrol"
+                    value="<%= locals.oldData ? oldData.mobile : null %>"
+                >
+                    <% if(locals.errors && errors.mobile){ %>
+                        <div class="errorValidation"><%= errors.mobile.msg %> </div>
+                    <% } %> 
                 </div>
                 
                 <div class="formulariodiv">
                     <label for="Nombres">Nombres:</label>
-                    <input type="text" name="name" placeholder="Ej: Pablo Gabriel" class="inputcontrol" required>
+                    <input type="text" 
+                    name="name" 
+                    placeholder="Ej: Pablo Gabriel" 
+                    class="inputcontrol"
+                    value="<%= locals.oldData ? oldData.name : null %>"
+                >
+                    <% if(locals.errors && errors.name){ %>
+                        <div class="errorValidation"><%= errors.name.msg %> </div>
+                    <% } %> 
                 </div>
                 
                 <div class="formulariodiv">
                     <label for="Apellidos">Apellidos:</label>
-                    <input type="text" name="lastName" placeholder="Ej: Cadena Weidmann" class="inputcontrol" required>
+                    <input type="text" 
+                    name="lastName" 
+                    placeholder="Ej: Cadena Weidmann" 
+                    class="inputcontrol"
+                    value="<%= locals.oldData ? oldData.lastName : null %>"
+                >
+                    <% if(locals.errors && errors.lastName){ %>
+                        <div class="errorValidation"><%= errors.lastName.msg %> </div>
+                    <% } %> 
                 </div>
                                 
                 <div class="formulariodiv">
                     <label for="DNI">DNI:</label>
-                    <input type="number" name="DNI" placeholder="Ej: 12345678" class="inputcontrol" required>
+                    <input type="number" 
+                    name="DNI" 
+                    placeholder="Ej: 12345678" 
+                    class="inputcontrol"
+                    value="<%= locals.oldData ? oldData.DNI : null %> "
+                >
+                    <% if(locals.errors && errors.DNI){ %>
+                        <div class="errorValidation"><%= errors.DNI.msg %> </div>
+                    <% } %> 
                 </div>
             </div>    
             
@@ -58,13 +114,21 @@
                 
                 <div class="formulariodiv">
                     <label for="Contrasena">Contraseña</label>
-                    <input type="password" name="password" class="inputcontrol" minlength="6" required>
+                    <input type="password" 
+                    name="password" 
+                    class="inputcontrol" 
+                    minlength="6"
+                    value="<%= locals.oldData ? oldData.password : null %> "
+                >
+                    <% if(locals.errors && errors.password){ %>
+                        <div class="errorValidation"><%= errors.password.msg %> </div>
+                    <% } %> 
                 </div>
             
                 
                 <div class="formulariodiv">
                     <label for="ConfirmarContrasena">Confirmar Contraseña</label>
-                    <input type="password" id="cpass" name="password" class="inputcontrol" minlength="6" required>
+                    <input type="password" id="cpass" name="password" class="inputcontrol" minlength="6">
                 </div>
         </div>
         

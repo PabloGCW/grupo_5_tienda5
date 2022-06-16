@@ -406,7 +406,14 @@ h3.formulario{
 .formulariodiv label{
     display: block;
     margin-left: 2px;
-
+}
+.formColumnas .formulariodiv{
+    width: 180px;
+    display: flex;
+    flex-wrap: wrap;
+    /*text-align: justify;*/
+    margin: 5px 50px;
+    /*justify-content: center;*/
 }
 .inputcontrol{
     margin: 10px 0px 15px;

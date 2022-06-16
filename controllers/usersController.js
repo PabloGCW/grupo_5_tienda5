@@ -1,3 +1,5 @@
+const {validationResult} = require('express-validator')
+
 const mainController = {
     
     login: (req, res)=>{
@@ -7,7 +9,14 @@ const mainController = {
         res.render ("users/register")
     },
     processRegister: (req, res)=>{
-        return res.send("Ok, viniste por POST")
+        const resultValidation = validationResult(req)
+        if (resultValidation.errors.length > 0 ){
+            return res.render('users/register', {
+                errors:resultValidation.mapped(), 
+                oldData:req.body
+            })
+        }
+        res.redirect('/')
     }
 }
 
