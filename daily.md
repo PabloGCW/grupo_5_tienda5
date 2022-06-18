@@ -7,7 +7,14 @@ Se realizan dos veces por semana luego de cada clase
 ● Qué va a hacer hoy.
 
 Próximos pasos: 
-Terminar sprint 4
+Seguir con el Sprint 5
+
+Reunión del sabado 18-06-2022
+
+Se creó la identidad de usuarios
+
+
+
 
 Reunión del miércoles 08-06-2022
 Se ha corregido lo previsto en la reunión anterior
