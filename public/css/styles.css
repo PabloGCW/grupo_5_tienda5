@@ -165,7 +165,7 @@ article img{
 }
 
 h3{
-    /*font-family: 'Playfair Display', serif;*/
+    font-family: 'Playfair Display', serif;
     font-size: 16px;
     margin-bottom: 5px;
 }
@@ -364,19 +364,18 @@ h3.formulario{
     font-size: 24px;
     
 }
-
 .formulario{
     padding: 25px 40px;
     margin: auto;
     width: 47vw;
-    text-align: left;
+    /*text-align: left;*/
 }
 .formColumnas{
     display: flex;
     justify-content:left;
     flex-wrap: wrap-reverse;
     text-align: justify;
-    margin: 5px 10px;
+    /*margin: 5px 10px;*/
 }
 .ambosLados div{
     display: flex;
@@ -411,9 +410,7 @@ h3.formulario{
     width: 180px;
     display: flex;
     flex-wrap: wrap;
-    /*text-align: justify;*/
     margin: 5px 50px;
-    /*justify-content: center;*/
 }
 .inputcontrol{
     margin: 10px 0px 15px;

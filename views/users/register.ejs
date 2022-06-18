@@ -22,8 +22,8 @@
                         id="domicilio" 
                         name="address" 
                         placeholder="Ej: Av. Triunvirato 444 Dept 4-A" 
-                        class="inputcontrol <%= locals.errors && errors.address ? 'is-invalid' : null %> "
-                        value="<%= locals.oldData ? oldData.address : null %> "
+                        class="inputcontrol"
+                        value="<%= locals.oldData ? oldData.address : null %>"
                     >
                         <% if(locals.errors && errors.address){ %>
                             <div class="errorValidation"><%= errors.address.msg %> </div>
