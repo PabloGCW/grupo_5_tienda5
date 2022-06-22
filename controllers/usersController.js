@@ -20,7 +20,30 @@ const mainController = {
                 oldData:req.body
             })
         }
-        res.redirect('/')
+
+        let userInDB = User.findByField('email', req.body.email);
+
+		if (userInDB) {
+			return res.render('users/register', {
+				errors: {
+					email: {
+						msg: 'Este email ya está registrado'
+					}
+				},
+				oldData: req.body
+			});
+		}
+
+        let userToCreate = {
+			...req.body,
+			password: bcryptjs.hashSync(req.body.password,12),
+			avatar: req.file.filename
+		}
+
+		let userCreated = User.create(userToCreate);
+
+		return res.redirect('/Usuarios/login');
+
     }
 }
 
