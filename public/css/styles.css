@@ -359,6 +359,11 @@ footer{
 
 /* Estilos para Formularios de Registro  y Login */
 
+.errorValidation{
+    color: red;
+    font-size: 10px;
+}
+
 h3.formulario{
     text-align: center;
     font-size: 24px;

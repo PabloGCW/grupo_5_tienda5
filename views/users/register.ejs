@@ -13,7 +13,7 @@
 
     <main>
         <h3 class="formulario">CREA TU CUENTA</h3>
-        <form action="/Usuarios/Registrarse" method="POST" class="formulario">
+        <form action="/Usuarios/Registrarse" method="POST" enctype="multipart/form-data" class="formulario">
             <div class="formColumnas">
                 
                 <div class="formulariodiv">
@@ -102,14 +102,27 @@
                     name="DNI" 
                     placeholder="Ej: 12345678" 
                     class="inputcontrol"
-                    value="<%= locals.oldData ? oldData.DNI : null %> "
+                    value="<%= locals.oldData ? oldData.DNI : null %>"
                 >
                     <% if(locals.errors && errors.DNI){ %>
                         <div class="errorValidation"><%= errors.DNI.msg %> </div>
                     <% } %> 
                 </div>
-            </div>    
-            
+
+                <div class="formulariodiv">
+                    <label>Imagen de Perfil:</label>
+                    <input type="file" 
+                    name="avatar"  
+                    class="inputcontrol"
+                    value="<%= locals.oldData ? oldData.avatar : null %>"
+                >
+                    <% if(locals.errors && errors.avatar){ %>
+                        <div class="errorValidation"><%= errors.avatar.msg %> </div>
+                    <% } %> 
+                </div>
+
+
+            </div>               
         <div class="formColumnas">
                 
                 <div class="formulariodiv">
@@ -134,7 +147,7 @@
         
             <div class="contenedorButton"><button type="submit" class="buttonform">Crear cuenta</button></div>
 
-            <p class="labelLogin">Si ya tenés una cuenta ingresá haciendo click <a href="http://localhost:3000/users/login">acá</a></p>
+            <p class="labelLogin">Si ya tenés una cuenta ingresá haciendo click <a href="http://localhost:3000/Usuarios/login">acá</a></p>
         </form>
 
 
