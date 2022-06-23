@@ -3,15 +3,22 @@ const app = express();
 const mainRoutes = require("./routes/main.js");
 const usersRoutes = require("./routes/users.js");
 const productsRoutes = require("./routes/products.js");
-const { json } = require("express/lib/response");
+const { json, cookie } = require("express/lib/response");
 const methodOverride = require("method-override")
+const session = require('express-session');
+const cookies = require('cookie-parser');
 
 app.use(express.static("public"));
 
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
 app.use(methodOverride("_method"));
-
+app.use(session({
+	secret: "Es un palabra secreta",
+	resave: false,
+	saveUninitialized: false,
+}));
+app.use(cookies())
 
 
 app.set("view engine", "ejs");

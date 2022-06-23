@@ -1,13 +1,26 @@
 [
-    {
-        "id": 1,
-        "name": "Pablo",
-        "lastName": "Cadena",
-        "DNI": "36912875",
-        "email": "cadenapg@gmail.com",
-        "mobile": "3874659207",
-        "address": "Pasaje Patricias Argentinas 754",
-        "CP": "4400",
-        "password": "password123"
-    }
+ {
+  "id": 1,
+  "name": "Pablo",
+  "lastName": "Cadena",
+  "DNI": "36912875",
+  "email": "cadenapg@gmail.com",
+  "mobile": "3874659207",
+  "address": "Pasaje Patricias Argentinas 754",
+  "CP": "4400",
+  "password": "password123",
+  "avatar": ""
+ },
+ {
+  "id": 2,
+  "address": "AvSiempreViva",
+  "CP": "324",
+  "email": "cadena@gmail.com",
+  "mobile": "435154",
+  "name": "otroPablo",
+  "lastName": "otroCadena",
+  "DNI": "432",
+  "password": "$2a$12$PA0hfVFH4KhbweyfwsW8SuL2Qmc6XFhHmWto6/jWTpBiDFEIkX.t6",
+  "avatar": "1655936927749_img.jpg"
+ }
 ]
