@@ -381,11 +381,12 @@ h3.formulario{
 .ambosLados div{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;grupo
     /* text-align: justify; */
     /* margin: 5px 10px; */
 }
-.ladoIzquierdo div{
+/* .ladoIzquierdo div{
     display: flex;
     flex-direction: column;
     margin: 0%;
@@ -394,7 +395,7 @@ h3.formulario{
     display: flex;
     flex-direction: column;
     margin: 0%;
-}
+} */
 .formulariodiv{
     width: 180px;
     display: flex;
