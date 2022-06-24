@@ -13,7 +13,7 @@
         <h3 class="formulario">Editar productos del Sitio</h3>
         <form action="/Productos/edicionProducto/<%= productoSeleccionado.id %>?_method=PATCH"  method="POST" enctype="multipart/form-data" class="formulario">
             
-            <div class="ambosLados">
+            <!-- <div class="ambosLados"> -->
 
                 <div class="ladoIzquierdo">
 
@@ -66,26 +66,24 @@
             
                     <div class="formColumnas">
                 
-                        <div class="formulariodiv">
+                        <div class="formulariodivCol">
                             <label>Precio venta:</label>
                             <input type="number" name="price" class="inputcontrol" value="<%= productoSeleccionado.price %>" required>
                         </div>
 
-                        <div class="formulariodiv">
+                        <div class="formulariodivCol">
                             <label>Stock inicial:</label>
                             <input type="number" name="stock" class="inputcontrol" value="<%= productoSeleccionado.stock %>" required>
                         </div>
 
                     </div>
                 </div>
-            </div>
+            <!-- </div> -->
         
-            <div class="contenedorButton"><button type="submit" class="buttonform">Confirmar</button></div>
-
-            
-            
+        
+           
         </form>
-
+        <div class="contenedorButton"><button type="submit" class="buttonform">Confirmar</button></div>
 
     </main>
 
