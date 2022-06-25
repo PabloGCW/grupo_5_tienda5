@@ -13,7 +13,7 @@
 
     <main>
         <h3 class="formulario">Inicio de Sesión</h3>
-        <form action="/" method="post" class="formulario">
+        <form action="/Usuarios/login" method="POST" class="formulario">
 
                 <div class="formulariodiv">
                     <label for="email">Ingresá tu correo electrónico:</label>
@@ -22,13 +22,13 @@
             
                 <div class="formulariodiv">
                     <label for="contraseña">Ingresá tu contraseña:</label>
-                    <input type="password" name="contraseña" id="contraseña" class="inputcontrol" minlength="6" required oninvalid="setCustomValidity('Debe ingresar un mínimo de 6 caracteres en su contraseña')" oninput="setCustomValidity('')">
+                    <input type="password" name="password" id="contraseña" class="inputcontrol" minlength="6">
                 </div>
             
                 
                 <div class="optionLogin">
                     <label>Recordar mi cuenta</label>
-                    <input type="checkbox" value="recordarCuenta">
+                    <input type="checkbox" name="remember_user">
                 </div>
         
                 <div class="optionLogin"><label>¿Olvidaste tu contraseña? <a href="#">Recuperala</a></label></div>

@@ -9,6 +9,15 @@ Se realizan dos veces por semana luego de cada clase
 Próximos pasos: 
 Seguir con el Sprint 5
 
+Reunión del sabado 25-06-2022
+
+Se implementó el login de usuario y la función de recordar al mismo
+En login de usuario falta implementar la visualización de los errores
+
+Reunión del miércoles 22-06-2022
+
+Se creó la registración de usuarios
+
 Reunión del sabado 18-06-2022
 
 Se creó la identidad de usuarios
