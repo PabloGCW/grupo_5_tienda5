@@ -377,8 +377,16 @@ h3.formulario{
     padding: 25px 40px;
     margin: auto;
     width: 90%;
-    /*text-align: left;*/
 }
+/* .ambosLados{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 25px 40px;
+    margin: auto;
+    width: 90%;
+} */
 .formColumnas{
     display: flex;
     justify-content:left;
@@ -387,42 +395,28 @@ h3.formulario{
     flex-direction: row;
     /*margin: 5px 10px;*/
 }
-/* .ambosLados div{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-} */
-.ladoIzquierdo div{
+.ladoIzquierdo{
     box-sizing: border-box;
     width: 40vw;
     margin: 0%;
     padding: 1vw;
     text-align: center;
 }
-.ladoDerecho div{
+.ladoDerecho{
     box-sizing: border-box;
     width: 40vw;
     margin: 0%;
     padding: 1vw;
     text-align: left;
 }
-/* .formulariodiv{
-    width: 180px;
+/* .formulariodiv{ */
+    /* width: 180px;
     display: flex;
     flex-wrap: wrap;
     text-align: justify;
     margin: 5px 50px;
-    justify-content: center;
-} */
-.formulariodivCol{
-    box-sizing: border-box;
-    width: 20vw;
-    margin: 0%;
-    padding: 1vw;
-    text-align: left;
-}
+    justify-content: center; */
+/* } */
 .formulariodiv label{
     display: block;
     margin-left: 2px;
@@ -430,6 +424,7 @@ h3.formulario{
 .formColumnas .formulariodiv{
     width: 180px;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     margin: 5px 50px;
 }
