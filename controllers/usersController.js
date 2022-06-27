@@ -85,6 +85,12 @@ const mainController = {
     profile: (req, res)=>{
         res.render ("users/profile")
 
+    },
+
+	logout: (req, res)=>{
+        res.clearCookie('userEmail');
+		req.session.destroy();
+		return res.redirect('/');
     }
 }
 

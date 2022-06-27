@@ -1,3 +1,24 @@
+<!-- <header>
+    
+    <nav class="navBar">
+        <div><img src="/images/logo.jpeg" alt=""></div>
+
+        <div><ul>
+            <li class="liOcultoNavBar"><a href="/">Inicio</a></li>
+            <li class="liOcultoNavBar"><a href="/Productos">Productos</a></li>
+
+            
+            <li class="liOcultoNavBar"><a href="/Usuarios/Registrarse">Registrarse</a></li>
+            <li><span class="material-symbols-outlined">search</span></li>
+            <li class="liOcultoNavBar"><a href="/Usuarios/login"><span class="material-symbols-outlined">person</span></a></li>
+            <li><a href="/Productos/Carrito"><span class="material-symbols-outlined">shopping_bag</span></a></li>
+            <li class="menuOcultoNavBar"><span class="material-symbols-outlined">menu</span></li>
+        </ul></div>
+    </nav>
+</header> -->
+
+
+
 <header>
     
     <nav class="navBar">
@@ -6,6 +27,26 @@
         <div><ul>
             <li class="liOcultoNavBar"><a href="/">Inicio</a></li>
             <li class="liOcultoNavBar"><a href="/Productos">Productos</a></li>
+
+            <% if (locals.isLogged) { %>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropUser" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="/images/usersAvatars/<%= locals.userLogged.avatar %>" width="40" style="border-radius: 100%;">
+                        Hola <%= locals.userLogged.name %> 
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/Usuarios/perfil">My profile</a>
+                        <li><hr class="dropdown-divider"></li>
+                        <a class="dropdown-item" href="/Usuarios/logout">Logout</a>
+                        <li class="liOcultoNavBar"><a href="/Usuarios/login"><span class="material-symbols-outlined">person</span></a></li>
+                    </ul>
+                </li>
+            <% } else { %>
+                <li class="liOcultoNavBar"><a href="/Usuarios/Registrarse">Registrarse</a></li>
+                <li class="liOcultoNavBar"><a href="/Usuarios/login"><span class="material-symbols-outlined">person</span></a></li>
+            <% } %>
+
+            
             <li class="liOcultoNavBar"><a href="/Usuarios/Registrarse">Registrarse</a></li>
             <li><span class="material-symbols-outlined">search</span></li>
             <li class="liOcultoNavBar"><a href="/Usuarios/login"><span class="material-symbols-outlined">person</span></a></li>
