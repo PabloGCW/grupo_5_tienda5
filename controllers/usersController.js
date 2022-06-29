@@ -83,7 +83,8 @@ const mainController = {
 
 
     profile: (req, res)=>{
-        res.render ("users/profile")
+		
+        res.render ("users/profile", {user: req.session.userLogged})
 
     },
 

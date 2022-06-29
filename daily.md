@@ -7,7 +7,20 @@ Se realizan dos veces por semana luego de cada clase
 ● Qué va a hacer hoy.
 
 Próximos pasos: 
-Seguir con el Sprint 5
+Terminar estética del Sprint 5, empezar Sprint 6
+
+Reunión del miercoles 29-06-2022
+
+Solución al problema de bucle infinito de cookie (había un objeto literal vacío en el json)
+A trabajar:
+    - Visualización de errores en login sin credenciales válidas
+    - CSS para el header, la imagen muy grande rompe la fila
+    - CSS para la vista de perfil, la imagen muy grande, acomodar nombre y email
+    - CSS de los formularios
+
+Reunión del lunes 27-06-2022
+
+Se trabajaron los middlewares, perfil y logout
 
 Reunión del sabado 25-06-2022
 
