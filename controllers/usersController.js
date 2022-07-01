@@ -65,7 +65,7 @@ const mainController = {
 			return res.render('users/login', {
 				errors: {
 					email: {
-						msg: 'Las credenciales son inválidas'
+						msg: 'La contraseña es inválida'
 					}
 				}
                 
@@ -75,7 +75,7 @@ const mainController = {
 		return res.render('users/login', {
 			errors: {
 				email: {
-					msg: 'No se encuentra este email en nuestra base de datos'
+					msg: 'Este email no se encuentra registrado'
 				}
 			}
 		});

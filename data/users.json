@@ -10,5 +10,17 @@
   "DNI": "123455667",
   "password": "$2a$12$A3oS5CK0MIBOeZUZQaBMr.0U69pvL5vOy7esezhRh5wjVcTMq2VRK",
   "avatar": "1656169558073_img.jpg"
+ },
+ {
+  "id": 1,
+  "address": "Cra 70 N 109 -30",
+  "CP": "9876",
+  "email": "omaros0109@gmail.com",
+  "mobile": "3183455679",
+  "name": "Omar",
+  "lastName": "Ospina",
+  "DNI": "12345",
+  "password": "$2a$12$E7BDfMl2R/efzw.gtnw3tO96OukHxxqV5IPEO4i7cE2dfHfwQ.mEK",
+  "avatar": "1656558133284_img.jpg"
  }
 ]

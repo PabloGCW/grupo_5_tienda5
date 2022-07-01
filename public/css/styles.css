@@ -50,6 +50,22 @@ header{
     display: none;
 }
 
+.navBar img.imageAvatar{
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.profileAvatar{
+    width: 30%;
+    margin-left: 40px;
+}
+.profileEmail{
+    margin-left: 40px;
+    background-color: #c8aa86;
+    padding: 5px;
+    width: 300px;
+}
 /* Estilos para el slider */
 
 #slider{
@@ -122,6 +138,7 @@ main  {
     margin-top: 60px;
 }
 main h2{
+    margin-bottom: 30px;
     text-align: center;
     font-size: 24px;
 }
@@ -164,11 +181,11 @@ article img{
     margin-bottom: 5px;
 }
 
-h3{
+/*h3{
     font-family: 'Playfair Display', serif;
     font-size: 16px;
     margin-bottom: 5px;
-}
+}*/
 .precio{
     font-weight: bold;
     margin-bottom: 5px;
@@ -378,6 +395,32 @@ h3.formulario{
     margin: auto;
     width: 90%;
 }
+.formInicioSesion{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 25px 40px;
+    margin: auto;
+    width: 35%;
+}
+.formColumnas{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap-reverse;
+    text-align: justify;
+    flex-direction: row;
+    /*margin: 5px 10px;*/
+}
+.editFormColumnas{
+    margin-left: -10%;
+    display: flex;
+    /*justify-content:center;*/
+    flex-wrap: wrap;
+    text-align: left;
+    flex-direction: row;
+    /*margin: 5px 10px;*/
+}
 /* .ambosLados{
     display: flex;
     flex-direction: row;
@@ -387,9 +430,18 @@ h3.formulario{
     margin: auto;
     width: 90%;
 } */
-.formColumnas{
+.registerFormulario{
     display: flex;
-    justify-content:left;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 25px 40px;
+    margin: auto;
+    width: 60%;
+}
+.registerFormColumnas{
+    display: flex;
+    justify-content:center;
     flex-wrap: wrap-reverse;
     text-align: justify;
     flex-direction: row;
@@ -420,8 +472,17 @@ h3.formulario{
 .formulariodiv label{
     display: block;
     margin-left: 2px;
+    margin-top: 15px;
 }
-.formColumnas .formulariodiv{
+.editFormColumnas .formulariodiv{
+    text-align: left;
+    width: 10vw;
+    /*display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;*/
+    margin: 5px 50px;
+}
+.registerFormColumnas .formulariodiv{
     width: 180px;
     display: flex;
     flex-direction: row;
