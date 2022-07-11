@@ -1,3 +1,22 @@
+Retrospectiva Sprint 5
+
+Empezar a hacer:
+Revisar el funcionamiento responsive del sitio en todas las vistas en general
+Linkear vistas aisladas para poder ingresar desde el navegador y no solo escribiendo la url
+
+Hacer más de:
+Mejorar la estética de nuestro sitio, trabajar en la UI/UX
+
+
+Seguir haciendo:
+Reuniones de equipo de una hora y media los días lunes y miércoles
+
+Hacer menos de:
+Copiar código de Javier de sus videos de PlayGround para poder practicar más nosotros
+
+Dejar de hacer:
+
+
 Retrospectiva Sprint 4
 
 Empezar a hacer:

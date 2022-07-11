@@ -7,7 +7,15 @@ Se realizan dos veces por semana luego de cada clase
 ● Qué va a hacer hoy.
 
 Próximos pasos: 
-Terminar estética del Sprint 5, empezar Sprint 6
+Continuar sprint 6
+
+Reunión del lunes 11-07-2022
+
+Finalización del diagrama de base de datos
+
+Reunión del sábado 09-07-2022
+
+Se empezó la creación del diagrama de la base de datos utilizando sqldbm
 
 Reunión del miercoles 29-06-2022
 
