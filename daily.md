@@ -9,6 +9,14 @@ Se realizan dos veces por semana luego de cada clase
 Próximos pasos: 
 Continuar sprint 6
 
+Reunión del miércoles 20-07-2022
+
+Se crean los archivos JS para los modelos de las tablas de la base de datos
+
+Reunión del viernes 15-07-2022
+
+Se logra realizar el script de estructura generando el archivo structure.sql
+
 Reunión del lunes 11-07-2022
 
 Finalización del diagrama de base de datos
