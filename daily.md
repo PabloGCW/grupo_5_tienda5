@@ -9,6 +9,10 @@ Se realizan dos veces por semana luego de cada clase
 Próximos pasos: 
 Continuar sprint 6
 
+Reunión del sábado 23-07-2022 y jueves 21-07-2022
+
+Se crea el script de datos
+
 Reunión del miércoles 20-07-2022 y jueves 21-07-2022
 
 Se crean los archivos JS para los modelos de las tablas de la base de datos
