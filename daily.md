@@ -9,6 +9,10 @@ Se realizan dos veces por semana luego de cada clase
 Próximos pasos: 
 Continuar sprint 6
 
+Reunión del lunes 25-07-2022
+
+Se crean las relaciones en cada uno de los modelos
+
 Reunión del sábado 23-07-2022 y jueves 21-07-2022
 
 Se crea el script de datos
