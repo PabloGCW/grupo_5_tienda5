@@ -1,7 +1,7 @@
 {
   "name": "tienda5",
   "version": "1.0.0",
-  "description": "Breve Descricion dela Oferta de Productos:",
+  "description": "Breve Descricion de la Oferta de Productos:",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
