@@ -17,4 +17,4 @@ VALUES (1, '9780393288728R180', 1, 'Mantas Marcia', 'Manta de lanilla frisada', 
 (7, '9780393288728R186', 7, 'Fósforos pack por 70', 'Fósforos para encender tu hormo o estufa, o para sorprender amigos', 'Fósforos de 7.5 cm. Incluye raspador para encender', 'cerilla1.jpg', 1112, 700, 0, null);
 
 INSERT INTO productsusers
-VALUES (1, 7, 1, 2, '2022-07-23');
+VALUES (1, 7, 1);
