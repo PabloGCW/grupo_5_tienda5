@@ -24,7 +24,7 @@ module.exports = (sequelize, DataTypes) => {
     ProductCategory.associate = function (models) {
         ProductCategory.hasMany(models.Product, { // models.Movie -> Movies es el valor de alias en movie.js
             as: "products",
-            foreignKey: 'productsCategoryId',
+            foreignKey: 'productCategoryId',
             timestamps: false
         })
     }

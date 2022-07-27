@@ -60,15 +60,15 @@ module.exports = (sequelize, DataTypes) => {
     Product.associate = function (models) {
         Product.belongsTo(models.ProductCategory, { // models.Movie -> Movies es el valor de alias en movie.js
             as: "productsCategories",
-            foreignKey: 'productsCategoryId',
+            foreignKey: 'productCategoryId',
             timestamps: false
         })
 
         Product.belongsToMany(models.User, { // models.Movie -> Movies es el valor de alias en movie.js
             as: "users",
-            through: 'ProductsUsers',
-            foreignKey: 'productsId',
-            otherKey: 'usersId',
+            through: 'productsusers',
+            foreignKey: 'productId',
+            otherKey: 'userId',
             timestamps: false
         })
         
