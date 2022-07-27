@@ -1,7 +1,7 @@
-const { DataTypes } = require("sequelize/types");
+// const { DataTypes } = require("sequelize/types");
 
 module.exports = (sequelize, DataTypes) => {
-    let alias = 'Products'
+    let alias = 'Product'
     let cols = {
         id: {
             type: DataTypes.INTEGER,
@@ -9,11 +9,11 @@ module.exports = (sequelize, DataTypes) => {
             autoIncrement: true,
             allowNull: false
         },
-        SKU: {
+        sku: {
             type: DataTypes.STRING,
             allowNull: false
         },
-        ProductsCategory_id: {
+        productCategoryId: {
             type: DataTypes.INTEGER,
             foreignKey: true,
             allowNull: false
@@ -26,7 +26,7 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.STRING,
             allowNull: true
         },
-        features:{
+        feature:{
             type: DataTypes.TEXT,
             allowNull: true
         },
@@ -52,7 +52,7 @@ module.exports = (sequelize, DataTypes) => {
         }
     }
     let config = {
-        tableName: 'Products',
+        tableName: 'products',
         timestamps: false
     }
     const Product = sequelize.define(alias, cols, config);

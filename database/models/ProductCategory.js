@@ -1,7 +1,7 @@
-const { DataTypes } = require("sequelize/types");
+// const { DataTypes } = require("sequelize/types");
 
 module.exports = (sequelize, DataTypes) => {
-    let alias = 'ProductsCategories'
+    let alias = 'ProductCategory'
     let cols = {
         id: {
             type: DataTypes.INTEGER,
@@ -16,7 +16,7 @@ module.exports = (sequelize, DataTypes) => {
 
     }
     let config = {
-        tableName: 'ProductsCategories',
+        tableName: 'productscategories',
         timestamps: false
     }
     const ProductCategory = sequelize.define(alias, cols, config);

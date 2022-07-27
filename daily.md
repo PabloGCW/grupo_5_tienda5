@@ -9,6 +9,11 @@ Se realizan dos veces por semana luego de cada clase
 Próximos pasos: 
 Continuar sprint 6
 
+Reunión del miercoles 27-07-2022
+
+Vinculación Proyecto con BD
+Inicio del CRUD de productos listando los mismos
+
 Reunión del lunes 25-07-2022
 
 Se crean las relaciones en cada uno de los modelos

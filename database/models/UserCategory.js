@@ -1,7 +1,7 @@
-const { DataTypes } = require("sequelize/types");
+// const { DataTypes } = require("sequelize/types");
 
 module.exports = (sequelize, DataTypes) => {
-    let alias = 'UsersCategories'
+    let alias = 'UserCategory'
     let cols = {
         id: {
             type: DataTypes.INTEGER,
@@ -9,14 +9,14 @@ module.exports = (sequelize, DataTypes) => {
             autoIncrement: true,
             allowNull: false
         },
-        UsersType:{
+        userType:{
             type: DataTypes.STRING,
             allowNull: false
         }
 
     }
     let config = {
-        tableName: 'UsersCategories',
+        tableName: 'userscategories',
         timestamps: false
     }
     const UserCategory = sequelize.define(alias, cols, config);

@@ -1,7 +1,7 @@
-const { DataTypes } = require("sequelize/types");
+// const { DataTypes } = require("sequelize/types");
 
 module.exports = (sequelize, DataTypes) => {
-    let alias = 'Users'
+    let alias = 'User'
     let cols = {
         id: {
             type: DataTypes.INTEGER,
@@ -13,12 +13,12 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.STRING,
             allowNull: false
         },
-        UsersCategory_Id: {
+        userCategoryId: {
             type: DataTypes.INTEGER,
             foreignKey: true,
             allowNull: false
         },
-        CP:{
+        cp:{
             type: DataTypes.INTEGER,
             allowNull: false
         },
@@ -38,7 +38,7 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.STRING,
             allowNull: false
         },
-        DNI:{
+        dni:{
             type: DataTypes.INTEGER,
             allowNull: false
         },
@@ -52,7 +52,7 @@ module.exports = (sequelize, DataTypes) => {
         }
     }
     let config = {
-        tableName: 'Users',
+        tableName: 'users',
         timestamps: false
     }
     const User = sequelize.define(alias, cols, config);

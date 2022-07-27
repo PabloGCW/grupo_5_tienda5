@@ -14,18 +14,18 @@ const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
 
 
 
-app.use(express.json());
+// app.use(express.json());
 app.use(methodOverride("_method"));
-app.use(session({
-	secret: "Es un palabra secreta",
-	resave: false,
-	saveUninitialized: false,
-}));
+// app.use(session({
+// 	secret: "Es un palabra secreta",
+// 	resave: false,
+// 	saveUninitialized: false,
+// }));
 
-app.use(cookies())
+// app.use(cookies())
 
 
-app.use(userLoggedMiddleware);
+// app.use(userLoggedMiddleware);
 app.use(express.urlencoded({extended: false}));
 app.use(express.static("public"));
 
@@ -37,7 +37,7 @@ app.set("view engine", "ejs");
 app.listen(3000, () => console.log("Servidor corriendo en el puerto 3000"));
 
 app.use("/", mainRoutes)
-app.use("/Usuarios", usersRoutes)
+// app.use("/Usuarios", usersRoutes)
 app.use("/Productos", productsRoutes)
 
 

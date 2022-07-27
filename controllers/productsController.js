@@ -1,15 +1,33 @@
 const fs = require('fs');
 const path = require('path');
+const db = require('../database/models');
+const sequelize = db.sequelize;
+const { Op } = require("sequelize");
 
-const productsFilePath = path.resolve('./data/productsDataBase.json');
-const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+// const productsFilePath = path.resolve('./data/productsDataBase.json');
+// const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+
+const Products = db.Product;
+const Users = db.User;
+const ProductsCategories = db.ProductCategory;
 
 
 const mainController = {
 
     productMain: (req, res) => {
-        res.render("products/products", {products})
+        Products.findAll()
+            .then(products => {
+                res.render("products/products", {products})
+            })
+            // .catch(error => {
+            //     res.render("products/products", {products})
+            // })
     },
+
+
+
+
+
     productCart:(req, res)=>{
         res.render ("products/productCart")
     },
