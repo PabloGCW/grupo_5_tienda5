@@ -11,7 +11,7 @@
 
     <main>
         <h3 class="formulario">Editar productos del Sitio</h3>
-        <form action="/Productos/edicionProducto/<%= productoSeleccionado.id %>?_method=PATCH"  method="POST" enctype="multipart/form-data" class="formulario">
+        <form action="/Productos/edicionProducto/<%= product.id %>?_method=PATCH"  method="POST" enctype="multipart/form-data" class="formulario">
             
             <!-- <div class="ambosLados"> -->
 
@@ -19,8 +19,8 @@
 
                     <div class="formulariodiv">
                         <label>Imágen:</label>
-                        <p class="inputcontrol"><img src="/images/products/<%= productoSeleccionado.image%>" alt=""></p>
-                        <input type="file" name="image" class="inputcontrol" accept="image/*" value="<%= productoSeleccionado.image %>" required>
+                        <p class="inputcontrol"><img src="/images/products/<%= product.image%>" alt=""></p>
+                        <input type="file" name="image" class="inputcontrol" accept="image/*" value="<%= product.image %>" >
                     </div>
 
                 </div>
@@ -32,13 +32,13 @@
                 
                         <div class="formulariodiv">
                             <label>Código producto (SKU):</label>
-                            <input type="text" name="SKU" class="inputcontrol" value="<%= productoSeleccionado.SKU %> " required>
+                            <input type="text" name="SKU" class="inputcontrol" value="<%= product.sku %> " >
                         </div>
 
                         <div class="formulariodiv">
                             <label>Categoría:</label>
                         <!-- ARREGLAR VALUE -->
-                            <select type="text" name="category" class="inputcontrol" value="<%= productoSeleccionado.category %>" required>
+                            <select type="text" name="category" class="inputcontrol" value="<%= product.productCategoryId %>" >
                                 <option value="textiles">Textiles</option>
                                 <option value="giftbox">Giftbox</option>
                                 <option value="aromaticos">Aromáticos</option>
@@ -54,26 +54,26 @@
                 
                     <div class="formulariodiv">
                         <label>Nombre producto:</label>
-                        <input type="text" name="name" class="inputcontrol" value="<%= productoSeleccionado.name %>" required>
+                        <input type="text" name="name" class="inputcontrol" value="<%= product.name %>" >
                     </div>
                 
                     <div class="formulariodiv">
                         <label>Descripción:</label>
-                        <textarea name="description" class="inputcontrol"><%= productoSeleccionado.description %> </textarea>
+                        <textarea name="description" class="inputcontrol"><%= product.description %> </textarea>
                         <label>Características:</label>
-                        <textarea name="features" class="inputcontrol"><%= productoSeleccionado.features %> </textarea>
+                        <textarea name="features" class="inputcontrol"><%= product.feature %> </textarea>
                     </div>
             
                     <div class="editFormColumnas">
                 
                         <div class="formulariodiv">
                             <label>Precio venta:</label>
-                            <input type="number" name="price" class="inputcontrol" value="<%= productoSeleccionado.price %>" required>
+                            <input type="number" name="price" class="inputcontrol" value="<%= product.price %>" >
                         </div>
 
                         <div class="formulariodiv">
                             <label>Stock inicial:</label>
-                            <input type="number" name="stock" class="inputcontrol" value="<%= productoSeleccionado.stock %>" required>
+                            <input type="number" name="stock" class="inputcontrol" value="<%= product.stock %>" >
                         </div>
 
                     </div>

@@ -23,20 +23,15 @@ const mainController = {
             //     res.render("products/products", {products})
             // })
     },
-
-
-
-
-
     productCart:(req, res)=>{
         res.render ("products/productCart")
     },
+
     productDetail:(req, res)=>{
-        let id = req.params.id;
-        let productoSeleccionado = products.find( element => element.id == id)
-
-
-        res.render ("products/productDetail", {productoSeleccionado})
+        Products.findByPk(req.params.id)
+            .then(productoSeleccionado => {
+                res.render ("products/productDetail", {productoSeleccionado});
+            });
     },
     productSend:(req, res)=>{
         res.render ("products/productSend")
@@ -45,86 +40,63 @@ const mainController = {
         res.render ("products/productCreate")
     },
     productEdition:(req, res)=>{
-        let id = req.params.id;
-        let productoSeleccionado = products.find( element => element.id == id)
+        let productId = req.params.id;
+        let promiseProduct = Products.findByPk(productId, {include: ["productsCategories"]})
+        let promiseProductCategory = ProductsCategories.findAll()
 
-        res.render ("products/productEdit", {productoSeleccionado})
+        Promise.all([promiseProduct, promiseProductCategory])
+
+                .then(([product, productCategory]) => {
+                    res.render ("products/productEdit", {product, productCategory})
+                })
     },
+
     productUpdate:(req,res) => {
 
-        let id = req.params.id;
-        let productEdited = products.find(element => element.id == id)
-
-        let image
-        if(req.files[0] != undefined){
-			image = req.files[0].filename
-		}
-        else{
-			image = productEdited.image
-		}
-
-        productEdited = {
-            id: productEdited.id,
-            ...req.body,
-            image: image
-        }
-
-        let arrayEdited = products.map( element => {
-            if(element.id == productEdited.id){
-                return element = {...productEdited};
-            }
-            return element
+        let productId = req.params.id
+        Products.update({
+            ...req.body
+        },{
+            where: {id: productId}
         })
 
-        fs.writeFileSync(productsFilePath, JSON.stringify(arrayEdited))
-
-        res.redirect("/Productos")
-        //  + productEdited.id
+             .then( () => {
+                res.redirect("/Productos")
+             })
 
     },
-
     store: (req, res) => {
 
-		let image
-		if(req.files[0] != undefined){
-			image = req.files[0].filename
-		}
-        // else{
-		// 	image = "default-image.png"
-		// }
+		Products.create({
+            ...req.body
+        })
 
-		let newProduct = {
-			id: products[products.length - 1].id + 1,
-			...req.body, 
-			image: image
-		}
-
-		products.push(newProduct)
-
-		fs.writeFileSync(productsFilePath, JSON.stringify(products, null, ''));
-		
-		res.redirect("/Productos")
-
+		    .then( movie => {
+                res.redirect("/Productos")
+            })
 	},
 
     productDelete: (req,res) => {
 
-        let id = req.params.id;
-        let productoSeleccionado = products.find( element => element.id == id)
+        let productId = req.params.id;
+        Products.findByPk(productId)
 
-        res.render ("products/productDelete", {productoSeleccionado})
-
+             .then( (productoSeleccionado) => {
+                res.render ("products/productDelete", {productoSeleccionado})
+            })
     },
 
     productDeleted: (req,res) => {
-        let id = req.params.id;
-        let productoEliminado = products.filter( element => element.id != id)
+        let productId = req.params.id
+        Products.destroy({
+            where: {id: productId}
+        })
+        .then( () => {
+            res.redirect("/Productos")
+        })
+        }
 
-        fs.writeFileSync(productsFilePath, JSON.stringify(productoEliminado));
 
-        res.redirect("/Productos")
-
-    }
 }
 
 module.exports = mainController
