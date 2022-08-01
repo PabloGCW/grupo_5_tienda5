@@ -67,11 +67,19 @@ const mainController = {
     },
     store: (req, res) => {
 
+        let image
+		if(req.files[0] != undefined){
+			image = req.files[0].filename
+		}else{
+			image = "default-image.png"
+		}
+
 		Products.create({
-            ...req.body
+			...req.body, 
+			image: image
         })
 
-		    .then( movie => {
+		    .then( () => {
                 res.redirect("/Productos")
             })
 	},
