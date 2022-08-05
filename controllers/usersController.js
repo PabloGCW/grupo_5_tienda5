@@ -26,43 +26,36 @@ const mainController = {
             })
         }
 
-        // let userInDB = User.findByField('email', req.body.email);
         let userEmail = req.body.email
-        let userInDB = Users.findOne({where: {email: userEmail}})
+        Users.findOne({where: {email: userEmail}})
+		.then( user => {
+            if (user!==null) {
+                return res.render('users/register', {
+                    errors: {
+                        email: {
+                            msg: 'Este email ya está registrado'
+                        }
+                    },
+                    oldData: req.body
+                });
+            } else {
+                Users.create({
+                    ...req.body,
+                    password: bcryptjs.hashSync(req.body.password,12),
+                    avatar: req.file.filename                 
+                })
         
-        
-		if (userInDB) {
-			return res.render('users/register', {
-				errors: {
-					email: {
-						msg: 'Este email ya está registrado'
-					}
-				},
-				oldData: req.body
-			});
-		}
+                    .then( () => {
+                        res.redirect("/Usuarios/login")
+                    })
+                    .catch(function(err) {
+                        // print the error details
+                        console.log(err);
+                    });
 
-        // let userToCreate = {
-		// 	...req.body,
-		// 	password: bcryptjs.hashSync(req.body.password,12),
-		// 	avatar: req.file.filename
-		// }
-
-		// let userCreated = User.create(userToCreate);
-
-        Users.create({
-            password: bcryptjs.hashSync(req.body.password,12),
-		    avatar: req.file.filename,
-            ...req.body
-        })
-
-		    .then( user => {
-                res.redirect("/Usuarios/login")
-            })
-	
-
-		// return res.redirect('/Usuarios/login');
-
+            }
+    })
+       
     },
 
 

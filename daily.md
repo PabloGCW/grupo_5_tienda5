@@ -7,7 +7,11 @@ Se realizan dos veces por semana luego de cada clase
 ● Qué va a hacer hoy.
 
 Próximos pasos: 
-Continuar sprint 6
+Empezar sprint 7
+
+Reunión del viernes 5-08-2022
+
+Finalización CRUD de Productos y Usuarios con base de datos
 
 Reunión del miercoles 27-07-2022
 

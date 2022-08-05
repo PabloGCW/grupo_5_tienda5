@@ -16,7 +16,7 @@ module.exports = (sequelize, DataTypes) => {
         userCategoryId: {
             type: DataTypes.INTEGER,
             foreignKey: true,
-            allowNull: false
+            allowNull: true
         },
         cp:{
             type: DataTypes.INTEGER,
