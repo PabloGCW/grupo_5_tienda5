@@ -12,24 +12,26 @@ const authMiddleware = require('../middlewares/authMiddleware');
 
 
 // Página de Usuarios
-// router.get('/', mainController.users)
+router.get('/', mainController.users)
 
 // // Formulario de Registro
-// router.get("/registrarse", mainController.register);
+router.get("/registrarse", mainController.register);
 
 // // Procesar el registro
-// router.post("/registrarse", uploadFile.single('avatar'), validations, mainController.processRegister);
+router.post("/registrarse", uploadFile.single('avatar'), validations, mainController.processRegister);
+
+//router.post('/register',userController.upload,registerValidations,userController.registered);
 
 // // Formulario de login
-// router.get("/login", guestMiddleware,mainController.login);
+router.get("/login", guestMiddleware,mainController.login);
 
-// // Procesar el login
-// router.post('/login', mainController.loginProcess);
+// // // Procesar el login
+// // router.post('/login', mainController.loginProcess);
 
-// // Perfil de Usuario
+// // // Perfil de Usuario
 // router.get("/perfil", authMiddleware, mainController.profile);
 
-// // Logout
+// // // Logout
 // router.get('/logout/', mainController.logout);
 
-// module.exports = router;
+module.exports = router;

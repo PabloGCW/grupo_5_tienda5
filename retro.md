@@ -1,3 +1,24 @@
+Retrospectiva Sprint 6
+
+Empezar a hacer:
+Revisar el funcionamiento responsive del sitio en todas las vistas en general
+Linkear vistas aisladas para poder ingresar desde el navegador y no solo escribiendo la url
+
+Hacer más de:
+Mejorar la estética de nuestro sitio, trabajar en la UI/UX
+Verificaciones intermedias/consolelogs a medida que escribimos código
+
+
+Seguir haciendo:
+Reuniones de equipo de una hora y media los días lunes y miércoles
+
+Hacer menos de:
+
+
+Dejar de hacer:
+Pasarse de la fecha de deadline de entrega sin haber terminado por completo los entregables
+Grandes cantidades de lineas de códigos sin verificaciones intermedias
+
 Retrospectiva Sprint 5
 
 Empezar a hacer:
