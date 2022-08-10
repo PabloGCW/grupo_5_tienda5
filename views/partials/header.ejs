@@ -9,10 +9,11 @@
             <li class="liOcultoNavBar"><a href="/Productos">Productos</a></li>
 
             <% if (locals.isLogged) { %>
-                <li class="liOcultoNavBar"><img src="/images/usersAvatars/<%= locals.userLogged.avatar %>" class="imageAvatar"></li>
-                                        
-                        <li class="liOcultoNavBar"><a href="/Usuarios/logout">Logout</a></li>
-                        <li class="liOcultoNavBar"><a href="/Usuarios/login"><span class="material-symbols-outlined">person</span></a></li>
+
+                
+                <li class="liOcultoNavBar"><img src="/images/usersAvatars/<%= locals.userLogged.avatar %>" class="imageAvatar"></li>                
+                <li class="liOcultoNavBar"><a href="/Usuarios/logout">Logout</a></li>
+                <li class="liOcultoNavBar"><a href="/Usuarios/login"><span class="material-symbols-outlined">person</span></a></li>
                     
                 
             <% } else { %>

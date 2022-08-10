@@ -31,16 +31,16 @@
                 </div>
                 
                 <div class="formulariodiv">
-                    <label for="CP">Código Postal:</label>
+                    <label for="cp">Código Postal:</label>
                     <input type="number" 
-                    id="CP" 
+                    id="cp" 
                     name="cp" 
                     placeholder="Ej: 9999" 
                     class="inputcontrol"
-                    value="<%= locals.oldData ? oldData.CP : null %>"
+                    value="<%= locals.oldData ? oldData.cp : null %>"
                 >
-                    <% if(locals.errors && errors.CP){ %>
-                        <div class="errorValidation"><%= errors.CP.msg %> </div>
+                    <% if(locals.errors && errors.cp){ %>
+                        <div class="errorValidation"><%= errors.cp.msg %> </div>
                     <% } %> 
                 </div>
                 
@@ -102,10 +102,10 @@
                     name="dni" 
                     placeholder="Ej: 12345678" 
                     class="inputcontrol"
-                    value="<%= locals.oldData ? oldData.DNI : null %>"
+                    value="<%= locals.oldData ? oldData.dni : null %>"
                 >
-                    <% if(locals.errors && errors.DNI){ %>
-                        <div class="errorValidation"><%= errors.DNI.msg %> </div>
+                    <% if(locals.errors && errors.dni){ %>
+                        <div class="errorValidation"><%= errors.dni.msg %> </div>
                     <% } %> 
                 </div>
 
@@ -138,11 +138,7 @@
                     <% } %> 
                 </div>
             
-                
-                <!-- <div class="formulariodiv">
-                    <label for="ConfirmarContrasena">Confirmar Contraseña</label>
-                    <input type="password" id="cpass" name="password" class="inputcontrol" minlength="6">
-                </div> -->
+           
         </div>
         
             <div class="contenedorButton"><button type="submit" class="buttonform">Crear cuenta</button></div>
