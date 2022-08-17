@@ -4,6 +4,13 @@
     box-sizing: border-box;
     font-family: 'Oswald', sans-serif; 
 }
+html{
+    font-size: 1em;
+}
+
+/*body{
+    background-color:blue;
+}*/
 
 #bienvenida{
     color: #ffffff;
@@ -12,17 +19,21 @@
     font-size: 14px;
     padding: 5px;
     width: 100%;
+    position: sticky;
+    top: 0px;
+    
 }
 
 /* Estilos para el header */
 header{
+    background-color:brown;
     position: sticky;
-    top: 0px;
+    top: 25px;
     z-index: 100;
     background-color: #ffffff;
 }
 .navBar img{
-    width: 20vw;
+    width: 55%;
     height: 100%;
 }
 .navBar{
@@ -36,7 +47,9 @@ header{
     list-style: none;
     display: flex;
 }
+
 .navBar ul li{
+    
     margin: 0px 5px;
     padding: 5px;
 }
@@ -44,8 +57,14 @@ header{
 .navBar ul li a{
     text-decoration: none;
     color: #000;
+    transition: all 0.5s ease;
 }
-
+.navBar ul li a:hover{
+    padding: 5px 10px;
+    background:  #c8aa86;
+    /*color: #000;*/
+    border-radius: 15px;
+}
 .liOcultoNavBar{
     display: none;
 }
@@ -141,7 +160,7 @@ main  {
 main h2{
     margin-bottom: 30px;
     text-align: center;
-    font-size: 24px;
+    font-size: 2em;
 }
 /*
 .mainProdCart h2{
@@ -196,6 +215,9 @@ article img{
     margin-bottom: 5px;
 }
 .BotonCompra{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
     color: #ffffff;
     background-color: #c8aa86;
     border-radius: 30px;
@@ -221,7 +243,7 @@ article img{
     font-size: 12px;
     border-radius: 30px;
     padding: 5px;
-    font-family: 'Playfair Display', serif; 
+    /*font-family: 'Playfair Display', serif; */
     text-align: center;
     width: 100px;
     margin: auto;
@@ -231,6 +253,7 @@ article img{
 /* Estilos para Footer */
 
 footer{
+    /*background-color: aqua;*/
     border-top: #DCDCDC solid 1px;
     margin: auto;
     margin-top: 50px;
@@ -382,28 +405,34 @@ footer{
     font-size: 10px;
 }
 
-h3.formulario{
-    text-align: center;
-    font-size: 24px;
-    
-}
+.camposInicioSesion{ 
+    width: 40%;
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap:wrap;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    /*margin: 5px 50px;*/
+} 
 .formulario{
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 25px 40px;
+   /* padding: 25px 40px; */
     margin: auto;
     width: 90%;
 }
 .formInicioSesion{
+    
     display: flex;
     flex-direction:column;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 25px 40px;
     margin: auto;
-    width: 35%;
+    margin-top: 50px;
+    width: 60%;
 }
 .formColumnas{
     display: flex;
@@ -436,7 +465,7 @@ h3.formulario{
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 25px 40px;
+    padding: 0px 40px;
     margin: auto;
     width: 60%;
 }
@@ -462,18 +491,18 @@ h3.formulario{
     padding: 1vw;
     text-align: left;
 }
-/* .formulariodiv{ */
-    /* width: 180px;
+.formulariodiv{ 
+    width: 220px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
     text-align: justify;
     margin: 5px 50px;
-    justify-content: center; */
-/* } */
+    /*justify-content: center; */
+} 
 .formulariodiv label{
     display: block;
     margin-left: 2px;
-    margin-top: 15px;
+    margin-top: 5px;
 }
 .editFormColumnas .formulariodiv{
     text-align: left;
@@ -499,7 +528,11 @@ h3.formulario{
     font-size: 12px;
 }
 div.contenedorButton{
+    margin-top: 25px;
+    /*padding-top: 5px;*/
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     
 }
@@ -508,7 +541,7 @@ button.buttonform{
     background-color: #DCDCDC;
     border: #DCDCDC solid 1px;
     border-radius: 5px;
-    width: 40%;
+    width: 25%;
     margin-bottom: 15px;
     margin-top: 15px;
     transition: all 450ms;
@@ -520,6 +553,7 @@ button.buttonform:hover{
     border-radius: 15px;
 }
 .labelLogin{
+    width: 50%;
     font-size: 12px;
     text-align: center;
 }
@@ -529,8 +563,9 @@ button.buttonform:hover{
 
 .optionLogin{
     font-size: 12px;
-    text-align: right;
+    text-align: center;
 }
+
 .optionLogin a{
     color: #000;
 }
@@ -687,6 +722,7 @@ button.compra:hover{
             justify-content: space-around;
             text-align: center;
         }
+    
 }
 @media (min-width: 992px){
 

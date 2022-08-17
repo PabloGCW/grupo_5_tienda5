@@ -1,0 +1,103 @@
+*{
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+/* ESTILOS DE LA VISTA "CARRITO DE COMPRAS" */
+
+body {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+}
+/* Aquí inician los estilos del header */
+
+header {
+    /*background-color: rgb(143, 207, 143);*/
+    border-bottom: 1px gray solid;
+}
+
+#logo {
+    width: 20%;
+}
+
+/*header a    {
+    background-color: rgb(216, 127, 127);
+}*/
+
+
+/* Aquí inician los estilos del main */
+
+/*main {
+    background-color: rgb(223, 223, 104);
+}*/
+
+main h2 {
+    background-color: rgb(136, 101, 101);
+    border-radius: 10px;
+    
+    
+
+}
+
+.section1 {
+    display: flex;
+    border-top: 1px gray solid;
+    border-bottom: 1px gray solid;
+}
+
+div.detalles {
+    margin-top: 50px;
+    /*width: 60%;*/
+}
+
+/*.section1 p {
+    display: block;
+}*/
+
+section .precio {
+    margin-left: 600px;
+    display: flex;
+    align-items: center ;
+}
+
+#cant {
+    display: inline;
+    border: 1px black solid;
+    background-color: rgb(211, 205, 205);
+    border-radius: 15px;
+}
+
+img {
+    width: 15%;
+    border-radius: 20px;
+}
+.section2 {
+    display: flex;
+    /*background-color: rgb(86, 120, 158);*/
+    border-top: 1px gray solid;
+    border-bottom: 1px gray solid;
+}
+
+.fa-minus, .fa-plus {
+    border: 1px black solid;
+    background-color: rgb(211, 205, 205);
+    border-radius: 45px;
+}
+
+div.parrafos #subtotal, #total {
+    background-color:rgb(136, 101, 101);
+    border-radius: 15px;
+}
+
+div.parrafos #iniCompra, #seguirCompra {
+    display: inline-block;
+    background-color:rgb(136, 101, 101);
+    border-radius: 15px;
+}
+
+/* Aquí inician los estilos del footer */
+
+/*footer {
+    background-color:chartreuse;
+}*/

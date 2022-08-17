@@ -12,7 +12,7 @@
 
 
     <main>
-        <h3 class="registerFormulario">CREA TU CUENTA</h3>
+        <h2 class="main">CREA TU CUENTA</h2>
         <form action="/Usuarios/Registrarse" method="POST" enctype="multipart/form-data" class="registerFormulario">
             <div class="registerFormColumnas">
                 
@@ -32,7 +32,7 @@
                 
                 <div class="formulariodiv">
                     <label for="CP">Código Postal:</label>
-                    <input type="number" 
+                    <input type="text" 
                     id="CP" 
                     name="cp" 
                     placeholder="Ej: 9999" 
@@ -59,7 +59,7 @@
                 
                 <div class="formulariodiv">
                     <label for="number">Teléfono móvil:</label>
-                    <input type="number" 
+                    <input type="text" 
                     id="number" 
                     name="mobile" 
                     class="inputcontrol"
@@ -98,7 +98,7 @@
                                 
                 <div class="formulariodiv">
                     <label for="DNI">DNI:</label>
-                    <input type="number" 
+                    <input type="text" 
                     name="dni" 
                     placeholder="Ej: 12345678" 
                     class="inputcontrol"
@@ -131,7 +131,7 @@
                     name="password" 
                     class="inputcontrol" 
                     minlength="6"
-                    value="<%= locals.oldData ? oldData.password : null %> "
+                    value="<%= locals.oldData ? oldData.password : null %>"
                 >
                     <% if(locals.errors && errors.password){ %>
                         <div class="errorValidation"><%= errors.password.msg %> </div>
