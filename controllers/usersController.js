@@ -59,52 +59,60 @@ const mainController = {
     },
 
 
-//     loginProcess: (req, res) => {
-// 		let userToLogin = User.findByField('email', req.body.email);
+    loginProcess: (req, res) => {
+        let userEmail = req.body.email
+		Users.findOne({where: {email: userEmail}})
+            .then( user => {
+                if(user) {
+                let isOkThePassword = bcryptjs.compareSync(req.body.password, user.password);
+                if (isOkThePassword) {
+                    delete user.password;
+                    req.session.userLogged = user;
+    
+                    if(req.body.remember_user) {
+                        res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 })
+                    }
+                    
+                        return res.redirect('/Usuarios/perfil');
+                   
+                    
+                } 
+                return res.render('users/login', {
+                    errors: {
+                        email: {
+                            msg: 'La contraseña es inválida'
+                        }
+                    }
+                    
+                });
+            }
+                return res.render('users/login', {
+                errors: {
+                    email: {
+                        msg: 'Este email no se encuentra registrado'
+                    }
+                }
+            });
+        })
+        .catch(function(err) {
+            // print the error details
+            console.log(err);
+        });
+
+    },
+
+
+    profile: (req, res)=>{
 		
-// 		if(userToLogin) {
-// 			let isOkThePassword = bcryptjs.compareSync(req.body.password, userToLogin.password);
-// 			if (isOkThePassword) {
-// 				delete userToLogin.password;
-// 				req.session.userLogged = userToLogin;
+        res.render ("users/profile", {user: req.session.userLogged})
 
-// 				if(req.body.remember_user) {
-// 					res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 })
-// 				}
+    },
 
-// 				return res.redirect('/Usuarios/perfil');
-// 			} 
-// 			return res.render('users/login', {
-// 				errors: {
-// 					email: {
-// 						msg: 'La contraseña es inválida'
-// 					}
-// 				}
-                
-// 			});
-// 		}
-
-// 		return res.render('users/login', {
-// 			errors: {
-// 				email: {
-// 					msg: 'Este email no se encuentra registrado'
-// 				}
-// 			}
-// 		});
-// 	},
-
-
-//     profile: (req, res)=>{
-		
-//         res.render ("users/profile", {user: req.session.userLogged})
-
-//     },
-
-// 	logout: (req, res)=>{
-//         res.clearCookie('userEmail');
-// 		req.session.destroy();
-// 		return res.redirect('/');
-//     }
+	logout: (req, res)=>{
+        res.clearCookie('userEmail');
+		req.session.destroy();
+		return res.redirect('/');
+    }
 }
 
 module.exports = mainController
