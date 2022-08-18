@@ -17,7 +17,7 @@ const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
 // app.use(express.json());
 app.use(methodOverride("_method"));
 app.use(session({
-	secret: "Es un palabra secreta",
+	secret: "Es una palabra secreta",
 	resave: false,
 	saveUninitialized: false,
 }));
