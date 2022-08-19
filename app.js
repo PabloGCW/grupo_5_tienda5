@@ -22,9 +22,7 @@ app.use(session({
 	saveUninitialized: false,
 }));
 
-app.use(cookies())
-
-
+app.use(cookies());
 app.use(userLoggedMiddleware);
 app.use(express.urlencoded({extended: false}));
 app.use(express.static("public"));

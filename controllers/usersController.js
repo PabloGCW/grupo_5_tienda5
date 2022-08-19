@@ -49,7 +49,6 @@ const mainController = {
                         res.redirect("/Usuarios/login")
                     })
                     .catch(function(err) {
-                        // print the error details
                         console.log(err);
                     });
 

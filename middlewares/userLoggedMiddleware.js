@@ -6,9 +6,12 @@ const Users = db.User;
 function userLoggedMiddleware (req, res, next){
     res.locals.isLogged = false;
 
-	// let emailInCookie = req.cookies.userEmail;
-    // let userFromCookie = 
-	Users.findOne({where: {email: req.cookies.userEmail}})
+	if(req.cookies.userEmail){
+	let emailInCookie = req.cookies.userEmail;
+	console.log(emailInCookie)
+
+
+	Users.findOne({where: {email: emailInCookie}})
 		.then( userFromCookie => {
 			if (userFromCookie) {
 				req.session.userLogged = userFromCookie;
@@ -19,8 +22,13 @@ function userLoggedMiddleware (req, res, next){
 				res.locals.userLogged = req.session.userLogged;
 			}
 		})
+		.catch(function(err) {
+			console.log(err);
+		})
 
-	next();
+	
+}
+next();
 }
 
 module.exports = userLoggedMiddleware;
