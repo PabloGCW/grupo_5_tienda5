@@ -1,3 +1,5 @@
+CREATE DATABASE  IF NOT EXISTS `tienda5db` /*!40100 DEFAULT CHARACTER SET utf8mb4 */;
+USE `tienda5db`;
 -- MySQL dump 10.13  Distrib 8.0.29, for Win64 (x86_64)
 --
 -- Host: 127.0.0.1    Database: tienda5db
@@ -23,11 +25,7 @@ DROP TABLE IF EXISTS `products`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `products` (
-<<<<<<< HEAD
   `id` int(11) AUTO_INCREMENT NOT NULL,
-=======
-  `id` int(11) NOT NULL AUTO_INCREMENT,
->>>>>>> e0da31f17590085752bcd95485eeddc64b8c3a4d
   `sku` varchar(25) NOT NULL,
   `productCategoryId` int(11) NOT NULL,
   `name` varchar(100) NOT NULL,
@@ -41,8 +39,17 @@ CREATE TABLE `products` (
   PRIMARY KEY (`id`),
   KEY `Products_productCategoryId_foreign` (`productCategoryId`),
   CONSTRAINT `Products_productCategoryId_foreign` FOREIGN KEY (`productCategoryId`) REFERENCES `productscategories` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `products`
+--
+
+LOCK TABLES `products` WRITE;
+/*!40000 ALTER TABLE `products` DISABLE KEYS */;
+/*!40000 ALTER TABLE `products` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
 -- Table structure for table `productscategories`
@@ -52,15 +59,20 @@ DROP TABLE IF EXISTS `productscategories`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `productscategories` (
-<<<<<<< HEAD
   `id` int(11) AUTO_INCREMENT NOT NULL,
-=======
-  `id` int(11) NOT NULL AUTO_INCREMENT,
->>>>>>> e0da31f17590085752bcd95485eeddc64b8c3a4d
   `name` varchar(45) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `productscategories`
+--
+
+LOCK TABLES `productscategories` WRITE;
+/*!40000 ALTER TABLE `productscategories` DISABLE KEYS */;
+/*!40000 ALTER TABLE `productscategories` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
 -- Table structure for table `productsusers`
@@ -70,11 +82,7 @@ DROP TABLE IF EXISTS `productsusers`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `productsusers` (
-<<<<<<< HEAD
   `id` int(11) AUTO_INCREMENT NOT NULL,
-=======
-  `id` int(11) NOT NULL AUTO_INCREMENT,
->>>>>>> e0da31f17590085752bcd95485eeddc64b8c3a4d
   `productId` int(11) NOT NULL,
   `userId` int(11) NOT NULL,
   PRIMARY KEY (`id`),
@@ -86,6 +94,15 @@ CREATE TABLE `productsusers` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
+-- Dumping data for table `productsusers`
+--
+
+LOCK TABLES `productsusers` WRITE;
+/*!40000 ALTER TABLE `productsusers` DISABLE KEYS */;
+/*!40000 ALTER TABLE `productsusers` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `users`
 --
 
@@ -93,11 +110,7 @@ DROP TABLE IF EXISTS `users`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `users` (
-<<<<<<< HEAD
   `id` int(11) AUTO_INCREMENT NOT NULL,
-=======
-  `id` int(11) NOT NULL AUTO_INCREMENT,
->>>>>>> e0da31f17590085752bcd95485eeddc64b8c3a4d
   `address` varchar(100) NOT NULL,
   `userCategoryId` int(11) NOT NULL,
   `cp` int(11) NOT NULL,
@@ -111,8 +124,17 @@ CREATE TABLE `users` (
   PRIMARY KEY (`id`),
   KEY `Users_userCategoryId_foreign` (`userCategoryId`),
   CONSTRAINT `Users_userCategoryId_foreign` FOREIGN KEY (`userCategoryId`) REFERENCES `userscategories` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `users`
+--
+
+LOCK TABLES `users` WRITE;
+/*!40000 ALTER TABLE `users` DISABLE KEYS */;
+/*!40000 ALTER TABLE `users` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
 -- Table structure for table `userscategories`
@@ -122,15 +144,20 @@ DROP TABLE IF EXISTS `userscategories`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `userscategories` (
-<<<<<<< HEAD
   `id` int(11) AUTO_INCREMENT NOT NULL,
-=======
-  `id` int(11) NOT NULL AUTO_INCREMENT,
->>>>>>> e0da31f17590085752bcd95485eeddc64b8c3a4d
   `userType` varchar(45) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `userscategories`
+--
+
+LOCK TABLES `userscategories` WRITE;
+/*!40000 ALTER TABLE `userscategories` DISABLE KEYS */;
+/*!40000 ALTER TABLE `userscategories` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -141,4 +168,4 @@ CREATE TABLE `userscategories` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-08-05 17:26:30
+-- Dump completed on 2022-07-26 20:51:19

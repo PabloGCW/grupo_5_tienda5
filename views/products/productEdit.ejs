@@ -9,17 +9,17 @@
 
     <%- include("../partials/header") %>
 
-    <main>
-        <h3 class="formulario">Editar productos del Sitio</h3>
+    <main class="main-edicionProducto">
+        <h2>EDITAR PRODUCTOS DEL SITIO</h2>
         <form action="/Productos/edicionProducto/<%= product.id %>?_method=PATCH"  method="POST" enctype="multipart/form-data" class="formulario">
             
             <!-- <div class="ambosLados"> -->
 
                 <div class="ladoIzquierdo">
 
-                    <div class="formulariodiv">
-                        <label>Imágen:</label>
-                        <p class="inputcontrol"><img src="/images/products/<%= product.image%>" alt=""></p>
+                    <div class="imageProducto">
+                        <!--<label>Imagen:</label>-->
+                        <p><img src="/images/products/<%= product.image%>" alt="imagen" id="imgEdicionProducto"></p>
                         <input type="file" name="image" class="inputcontrol" accept="image/*" value="<%= product.image %>" >
                     </div>
 

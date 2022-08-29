@@ -4,6 +4,13 @@
     box-sizing: border-box;
     font-family: 'Oswald', sans-serif; 
 }
+/*html{
+    font-size: 1em;
+}*/
+
+/*body{
+    background-color:blue;
+}*/
 
 #bienvenida{
     color: #ffffff;
@@ -12,17 +19,22 @@
     font-size: 14px;
     padding: 5px;
     width: 100%;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    
 }
 
 /* Estilos para el header */
 header{
+    background-color:brown;
     position: sticky;
-    top: 0px;
-    z-index: 100;
+    top: 25px;
+    z-index: 1;
     background-color: #ffffff;
 }
 .navBar img{
-    width: 20vw;
+    width: 57%;
     height: 100%;
 }
 .navBar{
@@ -33,10 +45,13 @@ header{
     padding: 10px;
 }
 .navBar ul{
+    /*display: block;*/
     list-style: none;
-    display: flex;
+    /*display: flex;*/
 }
+
 .navBar ul li{
+    
     margin: 0px 5px;
     padding: 5px;
 }
@@ -44,12 +59,63 @@ header{
 .navBar ul li a{
     text-decoration: none;
     color: #000;
+    transition: all 0.5s ease;
+}
+.navBar ul li a:hover{
+    padding: 5px 10px;
+    background:  #c8aa86;
+    /*color: #000;*/
+    border-radius: 15px;
 }
 
-.liOcultoNavBar{
+.div-menu ul{
+    /*width: 60%;*/
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start;
+
+
+    
+}
+.div-menu{
+    width: 100%;
     display: none;
+    /*position: relative;*/
+    /*background: #c8aa86;;*/
+    /*flex-direction: column;*/
+    /*order: 2;*/
+    /*flex-wrap: wrap-reverse;*/
+    /*width: 30%;*/
 }
+.div-iconos{
+    width: 15%;
+    display: flex;
+    /*position: relative;*/
+    /*flex-direction: row;*/
+    /*order: 1;*/
+}
+.div-iconos ul{
+    width: 80%;
+    display: flex;
+    /*background: yellow;*/
+    flex-direction: row;
+    justify-content: flex-end;
+}
+/*.liOcultoNavBar{
+    display: none;
+    flex-direction: column;
+}*/
+/*.menu-vertical .liOcultoNavIcon{
+    display:block;
+    background: yellow;
+    flex-direction: row;
+}*/
 
+/*.menu-vertical .liOcultoNavBar{
+    background: blue;
+    display: block;
+    flex-direction: row;
+}*/
 .navBar img.imageAvatar{
     vertical-align: middle;
     width: 50px;
@@ -66,6 +132,22 @@ header{
     padding: 5px;
     width: 300px;
 }
+#btn-menu{
+    display: none;
+}
+#btn-label{
+    display: block;
+    text-decoration: none;
+    color: #000;
+    transition: all 0.5s ease;
+}
+#btn-label:hover{
+    cursor: pointer;
+    padding: 5px 10px;
+    background:  #c8aa86;
+    /*color: #000;*/
+    border-radius: 15px;
+}
 /* Estilos para el slider */
 
 #slider{
@@ -73,6 +155,8 @@ margin: auto;
  max-width: 800px;
  width:100%;
  padding: 30px;
+ margin-bottom: 50px;
+ z-index: 3;
 }
 
 #slider ul li {
@@ -141,7 +225,7 @@ main  {
 main h2{
     margin-bottom: 30px;
     text-align: center;
-    font-size: 24px;
+    font-size: 1.2rem;
 }
 /*
 .mainProdCart h2{
@@ -149,7 +233,11 @@ main h2{
 }*/
 
 .serviciosMobile{
+    width: 80%;
+    margin: auto;
     text-align: center;
+    font-size: 0.9rem;
+    
 }
 .serviciosDesktop{
     display: none;
@@ -196,6 +284,9 @@ article img{
     margin-bottom: 5px;
 }
 .BotonCompra{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
     color: #ffffff;
     background-color: #c8aa86;
     border-radius: 30px;
@@ -221,7 +312,7 @@ article img{
     font-size: 12px;
     border-radius: 30px;
     padding: 5px;
-    font-family: 'Playfair Display', serif; 
+    /*font-family: 'Playfair Display', serif; */
     text-align: center;
     width: 100px;
     margin: auto;
@@ -230,20 +321,36 @@ article img{
 
 /* Estilos para Footer */
 
+#h3Footer{
+    font-weight: normal;
+    font-size: 1rem;
+}
 footer{
+    /*background-color: aqua;*/
     border-top: #DCDCDC solid 1px;
-    margin: auto;
+    /*margin: auto; */
     margin-top: 50px;
-    text-align: center;
+    /*text-align: center;*/
+    
+}
+.flexFooter{
+    display: flex;
+    flex-direction: column;
 }
 .footer{
     text-align: center;
-    margin: 10px;
+    /*margin: 100px;*/
     width: 50%;
-    margin: auto;
+    height: 80px;
+    line-height: 180%;
+    margin:auto;
+    
+    /*margin-left: 0px;
+    margin-right: 0px;
+    margin: 20px 0px;*/
 }
 .imgmediosdepago{
-    width: 50%;
+    width: 60%;
 }
 
 /* Estilos para Detalle de producto */
@@ -382,28 +489,35 @@ footer{
     font-size: 10px;
 }
 
-h3.formulario{
-    text-align: center;
-    font-size: 24px;
-    
-}
+.camposInicioSesion{ 
+    width: 70%;
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap:wrap;
+    /*text-align: justify;*/
+    margin-left: auto;
+    margin-right: auto;
+    /*margin: 5px 50px;*/
+} 
 .formulario{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /*justify-content: center;*/
     flex-wrap: wrap;
-    padding: 25px 40px;
+   /* padding: 25px 40px; */
     margin: auto;
-    width: 90%;
+    width: 100%;
 }
 .formInicioSesion{
+    
     display: flex;
     flex-direction:column;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 25px 40px;
     margin: auto;
-    width: 35%;
+    margin-top: 50px;
+    width: 70%;
 }
 .formColumnas{
     display: flex;
@@ -414,10 +528,10 @@ h3.formulario{
     /*margin: 5px 10px;*/
 }
 .editFormColumnas{
-    margin-left: -10%;
+    /*margin-left: -10%;*/
     display: flex;
-    /*justify-content:center;*/
-    flex-wrap: wrap;
+    justify-content:center;
+    /*flex-wrap: wrap;*/
     text-align: left;
     flex-direction: row;
     /*margin: 5px 10px;*/
@@ -436,9 +550,9 @@ h3.formulario{
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 25px 40px;
+    padding: 0px 40px;
     margin: auto;
-    width: 60%;
+    /*width: 60%;*/
 }
 .registerFormColumnas{
     display: flex;
@@ -455,33 +569,38 @@ h3.formulario{
     padding: 1vw;
     text-align: center;
 }
-.ladoDerecho{
+/*.ladoDerecho{
     box-sizing: border-box;
     width: 40vw;
     margin: 0%;
     padding: 1vw;
     text-align: left;
-}
-/* .formulariodiv{ */
-    /* width: 180px;
+}*/
+.formulariodiv{ 
+    width: 330px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
     text-align: justify;
     margin: 5px 50px;
-    justify-content: center; */
-/* } */
+    /*justify-content: center; */
+} 
 .formulariodiv label{
     display: block;
     margin-left: 2px;
-    margin-top: 15px;
+    margin-top: 5px;
 }
 .editFormColumnas .formulariodiv{
     text-align: left;
-    width: 10vw;
+    width: 15vw;
+    /*width: 330px;*/
+    display: flex;
+    flex-wrap:wrap;
+    text-align: justify;
+    margin: 5px 50px;
     /*display: flex;
     flex-direction: row;
     flex-wrap: wrap;*/
-    margin: 5px 50px;
+    /*margin: 5px 50px;*/
 }
 .registerFormColumnas .formulariodiv{
     width: 180px;
@@ -494,21 +613,25 @@ h3.formulario{
     margin: 10px 0px 15px;
     padding: 5px;
     width: 100%;
-    border: #DCDCDC solid 1px;
+    border: #9b9a9a solid 1px;
     border-radius: 10px;
     font-size: 12px;
 }
 div.contenedorButton{
+    margin-top: 25px;
+    /*padding-top: 5px;*/
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     
 }
 button.buttonform{
     padding: 10px;
     background-color: #DCDCDC;
-    border: #DCDCDC solid 1px;
+    border: #9b9a9a solid 1px;
     border-radius: 5px;
-    width: 40%;
+    /*width: 25%;*/
     margin-bottom: 15px;
     margin-top: 15px;
     transition: all 450ms;
@@ -516,10 +639,12 @@ button.buttonform{
 }
 button.buttonform:hover{
     background-color: #c8aa86;
+    border: #857040 solid 1px;
     color: #ffffff;
     border-radius: 15px;
 }
 .labelLogin{
+    width: 50%;
     font-size: 12px;
     text-align: center;
 }
@@ -529,13 +654,27 @@ button.buttonform:hover{
 
 .optionLogin{
     font-size: 12px;
-    text-align: right;
+    text-align: center;
 }
+
 .optionLogin a{
     color: #000;
 }
 
-/*ESTILOS PARA LA VISTA productCart.html */
+/* Estilos para la Edicion de productos */
+
+.imageProducto{
+    
+    text-align:end;
+}
+#imgEdicionProducto{
+    width: 100%;
+    padding: 2px;
+    border:#9b9a9a solid 1px;
+    border-radius: 8px;
+}
+
+/*ESTILOS PARA LA VISTA productCart.ejs */
 
 .mainProdCart {
     width: 90%;
@@ -672,9 +811,22 @@ button.compra:hover{
 
 
 
-/* Media Queries */
+/* MEDIA QUERIES */
 
-@media (min-width: 425px){
+@media (min-width: 768px) {
+
+    .registerFormulario{
+        width: 90%;
+    }
+
+/* Estilos para la vista Inicio de Sesion */
+
+    .formInicioSesion{
+        width: 60%;
+    }
+    main h2{
+        font-size: 1.4rem;
+    }
 
     article.card{
         width: 45%;
@@ -683,23 +835,89 @@ button.compra:hover{
         display: none;
         }
     .serviciosDesktop{
-            display: flex;
-            justify-content: space-around;
-            text-align: center;
-        }
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        font-size:medium;
+        line-height: 25px;
+    }
+    .flexFooter{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
-@media (min-width: 992px){
+/* Estilos para la vista Edicion de productos */
+.editFormColumnas{
+    /*margin-left: -10%;*/
+    display: flex;
+    justify-content:left;
+    /*flex-wrap: wrap;*/
+    text-align: left;
+    flex-direction: row;
+    /*margin: 5px 10px;*/
+}
 
+@media (min-width: 1024px){
+
+    .registerFormulario{
+        /*display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0px 40px;
+        margin: auto;*/
+        width: 70%;
+    }
+
+    /* Inicio de Sesión */
+
+    .formInicioSesion{
+        width: 80%;
+    }
+
+    main h2{
+        font-size: 1.8rem;
+    }
     article.card{
         width: 24%;
     }
-    .liOcultoNavBar{
+    /*.liOcultoNavBar{
+        background: #c8aa86;
         display: block;
-    }
-    .menuOcultoNavBar{
+        flex-direction: column;
+    }*/
+    /*.menuOcultoNavBar{
         display: none;
-    }
+    }*/
 
+    .navBar ul{
+        list-style: none;
+        display: flex;
+    }
+    .div-menu{
+        display: flex;
+        left: 60px;
+        justify-content: end;
+        width: 30%;
+    }
+    .div-menu ul{
+        /*background: blue;*/
+        display: flex ;
+        /*left: 150px;*/
+        /*display: flex;*/
+        flex-direction: row;
+    }
+    
+    .div-iconos{
+        display: flex;
+        flex-direction: row;
+    }
+    /*.menu-vertical .liOcultoNavBar{
+        display: block;
+        flex-direction: row;
+    }*/
     .serviciosMobile{
     display: none;
     }
@@ -712,11 +930,15 @@ button.compra:hover{
         display: flex;
         justify-content: space-around;
     }
-    .flexFooter{
+    #btn-label{
+        display: none;
+    }
+    /*.flexFooter{
         margin-top: 40px;
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
-    }
+    }*/
     .footer{
         margin-top: 0px ;
     }
@@ -749,6 +971,44 @@ button.compra:hover{
     .imagenImagen{
         width: 100%;
         margin-left: 20%;
+    }
+    .camposInicioSesion{
+        max-width: 40%;
+    }
+
+    /* cambios de la Edicion Productos */
+    .formulario{
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* cambios del footer */
+    #h3Footer{
+        font-size: 1.3rem;
+    }
 }
+
+
+
+
+@media (min-width: 1440px){
+
+/* Creación de cuenta */
+
+    .registerFormulario{
+        width: 45%;
+    }
+
+/* Inicio de Sesión */
+
+.formInicioSesion{
+    width: 70%;
+}
+.div-menu{
+    width: 50%;
+    font-size: 1.2rem;
+}    
+
+
 
 }
