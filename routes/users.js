@@ -26,12 +26,12 @@ router.post("/registrarse", uploadFile.single('avatar'), validations, mainContro
 router.get("/login", guestMiddleware,mainController.login);
 
 // // // Procesar el login
-// // router.post('/login', mainController.loginProcess);
+router.post('/login', mainController.loginProcess);
 
 // // // Perfil de Usuario
-// router.get("/perfil", authMiddleware, mainController.profile);
+router.get("/perfil", authMiddleware, mainController.profile);
 
 // // // Logout
-// router.get('/logout/', mainController.logout);
+router.get('/logout/', mainController.logout);
 
 module.exports = router;
