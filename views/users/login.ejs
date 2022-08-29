@@ -20,9 +20,12 @@
                     <input type="email" 
                         id="email" 
                         name="email" 
-                        class="inputcontrol" 
+                        class="inputcontrol email" 
                         value="<%= locals.oldData ? oldData.email : null %>"
                     >
+                    <div class="erroresEmail">
+                        <ul></ul>
+                    </div>
                         <% if(locals.errors && errors.email){ %>
                             <div class="errorValidation"><%= errors.email.msg %> </div>
                         <% } %> 
@@ -33,10 +36,13 @@
                     <input type="password" 
                     name="password" 
                     id="contraseña" 
-                    class="inputcontrol" 
+                    class="inputcontrol password" 
                     minlength="6"
                     value="<%= locals.oldData ? oldData.password : null %>"
-                >
+                    >
+                <div class="erroresPassword">
+                    <ul></ul>
+                </div>
                     <% if(locals.errors && errors.password){ %>
                         <div class="errorValidation"><%= errors.password.msg %> </div>
                     <% } %>
@@ -62,5 +68,6 @@
 
     <%- include("../partials/footer") %>
     
+    <script src="../js/scriptLog.js"></script>
 </body>
 </html>
