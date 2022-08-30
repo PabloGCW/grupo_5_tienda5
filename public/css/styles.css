@@ -12,6 +12,10 @@
     background-color:blue;
 }*/
 
+/*body{
+    background-color:blue;
+}*/
+
 #bienvenida{
     color: #ffffff;
     background-color: #c8aa86;
@@ -21,7 +25,10 @@
     width: 100%;
     position: sticky;
     top: 0px;
+<<<<<<< HEAD
     z-index: 2;
+=======
+>>>>>>> 808d61ac9c77a143adebb17855dcce80c58514ca
     
 }
 
@@ -30,11 +37,19 @@ header{
     background-color:brown;
     position: sticky;
     top: 25px;
+<<<<<<< HEAD
     z-index: 1;
     background-color: #ffffff;
 }
 .navBar img{
     width: 57%;
+=======
+    z-index: 100;
+    background-color: #ffffff;
+}
+.navBar img{
+    width: 55%;
+>>>>>>> 808d61ac9c77a143adebb17855dcce80c58514ca
     height: 100%;
 }
 .navBar{
@@ -60,6 +75,7 @@ header{
     text-decoration: none;
     color: #000;
     transition: all 0.5s ease;
+<<<<<<< HEAD
 }
 .navBar ul li a:hover{
     padding: 5px 10px;
@@ -79,6 +95,16 @@ header{
 }
 .div-menu{
     width: 100%;
+=======
+}
+.navBar ul li a:hover{
+    padding: 5px 10px;
+    background:  #c8aa86;
+    /*color: #000;*/
+    border-radius: 15px;
+}
+.liOcultoNavBar{
+>>>>>>> 808d61ac9c77a143adebb17855dcce80c58514ca
     display: none;
     /*position: relative;*/
     /*background: #c8aa86;;*/
@@ -225,7 +251,11 @@ main  {
 main h2{
     margin-bottom: 30px;
     text-align: center;
+<<<<<<< HEAD
     font-size: 1.2rem;
+=======
+    font-size: 2em;
+>>>>>>> 808d61ac9c77a143adebb17855dcce80c58514ca
 }
 /*
 .mainProdCart h2{
@@ -490,11 +520,19 @@ footer{
 }
 
 .camposInicioSesion{ 
+<<<<<<< HEAD
     width: 70%;
     margin-bottom: 15px;
     display: flex;
     flex-wrap:wrap;
     /*text-align: justify;*/
+=======
+    width: 40%;
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap:wrap;
+    text-align: justify;
+>>>>>>> 808d61ac9c77a143adebb17855dcce80c58514ca
     margin-left: auto;
     margin-right: auto;
     /*margin: 5px 50px;*/
@@ -517,7 +555,11 @@ footer{
     flex-wrap: wrap;
     margin: auto;
     margin-top: 50px;
+<<<<<<< HEAD
     width: 70%;
+=======
+    width: 60%;
+>>>>>>> 808d61ac9c77a143adebb17855dcce80c58514ca
 }
 .formColumnas{
     display: flex;
@@ -575,9 +617,15 @@ footer{
     margin: 0%;
     padding: 1vw;
     text-align: left;
+<<<<<<< HEAD
 }*/
 .formulariodiv{ 
     width: 330px;
+=======
+}
+.formulariodiv{ 
+    width: 220px;
+>>>>>>> 808d61ac9c77a143adebb17855dcce80c58514ca
     display: flex;
     flex-wrap:wrap;
     text-align: justify;
@@ -631,7 +679,11 @@ button.buttonform{
     background-color: #DCDCDC;
     border: #9b9a9a solid 1px;
     border-radius: 5px;
+<<<<<<< HEAD
     /*width: 25%;*/
+=======
+    width: 25%;
+>>>>>>> 808d61ac9c77a143adebb17855dcce80c58514ca
     margin-bottom: 15px;
     margin-top: 15px;
     transition: all 450ms;
@@ -835,6 +887,7 @@ button.compra:hover{
         display: none;
         }
     .serviciosDesktop{
+<<<<<<< HEAD
         display: flex;
         justify-content: space-around;
         text-align: center;
@@ -847,12 +900,23 @@ button.compra:hover{
         flex-direction: row;
         justify-content: space-between;
     }
+<<<<<<< HEAD
     button.buttonform{
         width: 25%;
     }
 
 
 
+=======
+=======
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+    
+>>>>>>> 808d61ac9c77a143adebb17855dcce80c58514ca
+}
+>>>>>>> 1e058b7feed2a67f083ded32afd5bd9c898e2e5d
 /* Estilos para la vista Edicion de productos */
 .editFormColumnas{
     /*width: 103%;*/
