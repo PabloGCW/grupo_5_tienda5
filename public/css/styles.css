@@ -606,7 +606,7 @@ footer{
 }
 .ladoIzquierdo{
     box-sizing: border-box;
-    width: 40vw;
+    width: 50%;
     margin: 0%;
     padding: 1vw;
     text-align: center;
@@ -639,7 +639,7 @@ footer{
 }
 .editFormColumnas .formulariodiv{
     text-align: left;
-    width: 15vw;
+    width: 27%;
     /*width: 330px;*/
     display: flex;
     flex-wrap:wrap;
@@ -716,8 +716,8 @@ button.buttonform:hover{
 /* Estilos para la Edicion de productos */
 
 .imageProducto{
+    width: 100%;
     
-    text-align:end;
 }
 #imgEdicionProducto{
     width: 100%;
@@ -900,6 +900,14 @@ button.compra:hover{
         flex-direction: row;
         justify-content: space-between;
     }
+<<<<<<< HEAD
+    button.buttonform{
+        width: 25%;
+    }
+
+
+
+=======
 =======
             display: flex;
             justify-content: space-around;
@@ -908,18 +916,41 @@ button.compra:hover{
     
 >>>>>>> 808d61ac9c77a143adebb17855dcce80c58514ca
 }
+>>>>>>> 1e058b7feed2a67f083ded32afd5bd9c898e2e5d
 /* Estilos para la vista Edicion de productos */
 .editFormColumnas{
-    /*margin-left: -10%;*/
+    /*width: 103%;*/
     display: flex;
-    justify-content:left;
+    justify-content: center;
     /*flex-wrap: wrap;*/
     text-align: left;
     flex-direction: row;
     /*margin: 5px 10px;*/
 }
+#imgEdicionProducto{
+    width: 100%;
+}
+.inputcontrol{
+    width: 100%;
+}
+.formulariodiv{ 
+    width: 350px;
+}
+.ladoDerecho{
+    box-sizing: border-box;
+    width: 60vw;
+    margin: 0%;
+    padding: 1vw;
+    text-align: left;
+}
 
-@media (min-width: 1024px){
+
+
+
+}
+
+
+@media (min-width: 1024px) {
 
     .registerFormulario{
         /*display: flex;
@@ -928,7 +959,7 @@ button.compra:hover{
         flex-wrap: wrap;
         padding: 0px 40px;
         margin: auto;*/
-        width: 70%;
+        width: 65%;
     }
 
     /* Inicio de Sesión */
@@ -1040,14 +1071,39 @@ button.compra:hover{
     .formulario{
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
     }
 
     /* cambios del footer */
     #h3Footer{
         font-size: 1.3rem;
     }
+    button.buttonform{
+        width: 25%;
+    }
+    .editFormColumnas .formulariodiv{
+        width: 15vw;
+}
+.ladoIzquierdo{
+    box-sizing: border-box;
+    width: 35%;
+    margin-left: 2%;
+    padding: 1vw;
+    text-align: center;
 }
 
+.ladoDerecho{
+    box-sizing: border-box;
+    width: 50%;
+    margin: 0%;
+    padding: 1vw;
+    text-align: left;
+}
+.formulariodiv{ 
+    width: 390px;
+}
+
+}
 
 
 
@@ -1061,14 +1117,37 @@ button.compra:hover{
 
 /* Inicio de Sesión */
 
-.formInicioSesion{
+    .formInicioSesion{
     width: 70%;
+    }
+    .div-menu{
+        width: 50%;
+        font-size: 1.2rem;
+    }    
+    .ladoIzquierdo{
+        box-sizing: border-box;
+        /*width: 40vw;*/
+        margin-left: 12%;
+        padding: 1vw;
+        text-align: center;
+    }     
+    .ladoDerecho{
+        width: 30%;
+    }
+    button.buttonform{
+        width: 30%;
+    }
+    #imgEdicionProducto{
+        width: 90%;
+    }
+    .editFormColumnas{
+        width: 135%;
+    }
+.formulariodiv{
+    width: 110%;
 }
-.div-menu{
-    width: 50%;
-    font-size: 1.2rem;
-}    
-
-
 
 }
+
+
+
