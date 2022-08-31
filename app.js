@@ -2,6 +2,11 @@ const express = require("express");
 const mainRoutes = require("./routes/main.js");
 const usersRoutes = require("./routes/users.js");
 const productsRoutes = require("./routes/products.js");
+
+// agregué la api
+const usersAPIRoutes = require("./routes/api/users.js");
+const productsAPIRoutes = require("./routes/api/products.js");
+
 const { json, cookie } = require("express/lib/response");
 const methodOverride = require("method-override")
 const session = require('express-session');
@@ -37,6 +42,10 @@ app.listen(3000, () => console.log("Servidor corriendo en el puerto 3000"));
 app.use("/", mainRoutes)
 app.use("/Usuarios", usersRoutes)
 app.use("/Productos", productsRoutes)
+
+// acá agregué lo de la api
+app.use("/APIUsuarios", usersAPIRoutes)
+app.use("/APIProductos", productsAPIRoutes)
 
 
 
