@@ -17,15 +17,13 @@ const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
 // app.use(express.json());
 app.use(methodOverride("_method"));
 app.use(session({
-	secret: "Es un palabra secreta",
+	secret: "Es una palabra secreta",
 	resave: false,
 	saveUninitialized: false,
 }));
 
-app.use(cookies())
-
-
-// app.use(userLoggedMiddleware);
+app.use(cookies());
+app.use(userLoggedMiddleware);
 app.use(express.urlencoded({extended: false}));
 app.use(express.static("public"));
 

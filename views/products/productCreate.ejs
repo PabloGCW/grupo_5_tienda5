@@ -16,7 +16,10 @@
                     
                     <div class="formulariodiv">
                         <label>Código producto (SKU):</label>
-                        <input type="text" name="sku" class="inputcontrol">
+                        <input type="text" name="sku" class="inputcontrol sku">
+                        <div class="erroresSKU">
+                            <ul></ul>
+                        </div>
                     </div>
 
                     <div class="formulariodiv">
@@ -37,7 +40,10 @@
                     
                     <div class="formulariodiv">
                     <label>Nombre producto:</label>
-                    <input type="text" name="name" class="inputcontrol">
+                    <input type="text" name="name" class="inputcontrol name">
+                    <div class="erroresName">
+                        <ul></ul>
+                    </div>
                     </div>
                                 
                     
@@ -45,7 +51,10 @@
                     <label>Descripción:</label>
                     <textarea name="description" class="inputcontrol"></textarea>
                     <label>Características:</label>
-                    <textarea name="feature" class="inputcontrol"></textarea>
+                    <textarea name="feature" class="inputcontrol description"></textarea>
+                    <div class="erroresDescription">
+                        <ul></ul>
+                    </div>
                     </div>
                 
                 
@@ -59,7 +68,10 @@
                     
                     <div class="formulariodiv">
                         <label>Precio venta:</label>
-                        <input type="number" name="price" class="inputcontrol" >
+                        <input type="number" name="price" class="inputcontrol price" >
+                        <div class="erroresPrice">
+                            <ul></ul>
+                        </div>
                     </div>
 
                     <div class="formulariodiv">
@@ -84,6 +96,8 @@
 
 
     <%- include("../partials/footer") %>
+
+    <script src="../js/scriptProdCreat.js"></script>
 
 </body>
 </html>

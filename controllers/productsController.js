@@ -74,7 +74,7 @@ const mainController = {
 			image = "default-image.png"
 		}
 
-		Products.create({
+		Products.create({include: ["productsCategories"]},{
 			...req.body, 
 			image: image
         })

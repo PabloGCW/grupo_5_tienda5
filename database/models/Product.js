@@ -11,16 +11,16 @@ module.exports = (sequelize, DataTypes) => {
         },
         sku: {
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: true
         },
         productCategoryId: {
             type: DataTypes.INTEGER,
             foreignKey: true,
-            allowNull: false
+            allowNull: true
         },
         name:{
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: true
         },
         description:{
             type: DataTypes.STRING,
@@ -36,11 +36,11 @@ module.exports = (sequelize, DataTypes) => {
         },
         price:{
             type: DataTypes.DECIMAL(8,2),
-            allowNull: false
+            allowNull: true
         },
         stock:{
             type: DataTypes.INTEGER,
-            allowNull: false
+            allowNull: true
         },
         offer:{
             type: DataTypes.INTEGER,
@@ -58,13 +58,13 @@ module.exports = (sequelize, DataTypes) => {
     const Product = sequelize.define(alias, cols, config);
 
     Product.associate = function (models) {
-        Product.belongsTo(models.ProductCategory, { // models.Movie -> Movies es el valor de alias en movie.js
+        Product.belongsTo(models.ProductCategory, { 
             as: "productsCategories",
             foreignKey: 'productCategoryId',
             timestamps: false
         })
 
-        Product.belongsToMany(models.User, { // models.Movie -> Movies es el valor de alias en movie.js
+        Product.belongsToMany(models.User, { 
             as: "users",
             through: 'productsusers',
             foreignKey: 'productId',
