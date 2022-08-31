@@ -8,6 +8,6 @@ router.get('/', productsAPIController.list);
 //Detalle de un producto
 router.get('/:id', productsAPIController.detail);
 //En que peliculas trabajo el actor con id tal ???????????????????????????????????
-//router.get('/:id', productsAPIController.userCategory);
+router.get('/algo/:id', productsAPIController.productCategory);
 
 module.exports = router;

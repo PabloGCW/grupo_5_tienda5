@@ -20,6 +20,7 @@ const productsAPIController = {
                 meta: {
                     status : 200,
                     total: products.length,
+
                     url: '/api/products'
                 },
                 data: products
@@ -41,24 +42,25 @@ const productsAPIController = {
                 }
                 res.status(200).json(respuesta);
             });
+    },
+
+    'productCategory': (req, res) => {
+        db.Product.findByPk(req.params.id,{
+            include: ['productsCategories']
+        })
+            .then(product => {
+                let respuesta = {
+                    meta: {
+                        status: 200,
+                        total: product.length,
+                        url: '/api/products/:id'
+                    },
+                    data: product
+                }
+                res.status(200).json(respuesta);
+            });
     }
 
-    // 'userCategory': (req, res) => {
-    //     db.User.findByPk(req.params.id,{
-    //         include: ['users']
-    //     })
-    //         .then(user => {
-    //             let respuesta = {
-    //                 meta: {
-    //                     status: 200,
-    //                     total: user.length,
-    //                     url: '/api/users/:id'
-    //                 },
-    //                 data: user
-    //             }
-    //             res.status(200).json(respuesta);
-    //         });
-    // },
     // create: (req,res) => {
     //     Users
     //     .create(

@@ -25,7 +25,7 @@ const usersAPIController = {
                 data: users
             }
                 res.status(200).json(respuesta);
-            })
+        })
     },
     
     'detail': (req, res) => {
