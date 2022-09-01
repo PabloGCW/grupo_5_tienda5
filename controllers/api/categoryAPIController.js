@@ -6,47 +6,40 @@ const moment = require('moment');
 
 
 //Aqui tienen otra forma de llamar a cada uno de los modelos
-const Users = db.User;
+const productsCategories = db.ProductCategory;
 //const UserCategories = db.UserCategory;
 
 //---------------------------
 //Dentro del usersAPIController uso las dos forma de poder llamar a nuestros modelo
 //----------------------------------
-const usersAPIController = {
+const categoryAPIController = {
     'list': (req, res) => {
-        db.User.findAll()
-        .then(users => {
-            
+        db.ProductCategory.findAll()
+        .then(productsCategories => {
             let respuesta = {
                 meta: {
                     status : 200,
-                    total: users.length,
-                    url: '/api/users'
+                    total: productsCategories.length,
+                    url: 'api/productCategories'
                 },
-                data: users.map((user, i) => {
-                    return ("id" + ": " + user.id + "   " +
-                    "nombre" + ": " + user.name + "   " +
-                    "email" + ": " + user.email + "   " +
-                    "link" + ": " + "http://localhost:3002/APIUsuarios/"+user.id)}),
-
+                data: productsCategories
             }
-                res.status(200).json(respuesta);
-        })
-    },
-    
-    'detail': (req, res) => {
-        db.User.findByPk(req.params.id)
-            .then(user => {
-                let respuesta = {
-                    meta: {
-                        status: 200,
-                        url: '/api/users/:id'
-                    },
-                    data: "id" + ": " + user.id + "   " + "nombre" + ": " + user.name + "   " + "email" + ": " + user.email + "   " + "avatar" + ": " + __dirname+user.avatar
-                }
-                res.status(200).json(respuesta);
-            });
-    }
+                res.json(respuesta);
+            })
+    }    
+    // 'detail': (req, res) => {
+    //     db.User.findByPk(req.params.id)
+    //         .then(user => {
+    //             let respuesta = {
+    //                 meta: {
+    //                     status: 200,
+    //                     url: '/api/users/:id'
+    //                 },
+    //                 data: "id" + ": " + user.id + "   " + "nombre" + ": " + user.name + "   " + "email" + ": " + user.email + "   " + "avatar" + ": " + __dirname+user.avatar
+    //             }
+    //             res.status(200).json(respuesta);
+    //         });
+    // }
 
     // 'userCategory': (req, res) => {
     //     db.User.findByPk(req.params.id,{
@@ -168,4 +161,4 @@ const usersAPIController = {
     
 }
 
-module.exports = usersAPIController;
+module.exports = categoryAPIController;
