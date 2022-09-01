@@ -14,16 +14,21 @@ const Products = db.Product;
 //----------------------------------
 const productsAPIController = {
     'list': (req, res) => {
-        db.Product.findAll()
+        db.Product.findAll({
+            include: ['productsCategories']
+        })
         .then(products => {
             let respuesta = {
                 meta: {
                     status : 200,
                     total: products.length,
-
+                    perCategory: products.map(product => {
+                        return product.productCategoryId + " " + product.name                  
+                    }),
                     url: '/api/products'
                 },
                 data: products
+                
             }
                 res.status(200).json(respuesta);
             })
@@ -45,17 +50,16 @@ const productsAPIController = {
     },
 
     'productCategory': (req, res) => {
-        db.Product.findByPk(req.params.id,{
+        db.Product.findAll({
             include: ['productsCategories']
         })
-            .then(product => {
+            .then(products => {
                 let respuesta = {
                     meta: {
                         status: 200,
-                        total: product.length,
                         url: '/api/products/:id'
                     },
-                    data: product
+                    data: products
                 }
                 res.status(200).json(respuesta);
             });

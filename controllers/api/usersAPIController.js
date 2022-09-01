@@ -16,13 +16,19 @@ const usersAPIController = {
     'list': (req, res) => {
         db.User.findAll()
         .then(users => {
+            
             let respuesta = {
                 meta: {
                     status : 200,
                     total: users.length,
                     url: '/api/users'
                 },
-                data: users
+                data: users.map((user, i) => {
+                    return ("id" + ": " + user.id + "   " +
+                    "nombre" + ": " + user.name + "   " +
+                    "email" + ": " + user.email + "   " +
+                    "link" + ": " + "http://localhost:3000/APIUsuarios/"+user.id)}),
+
             }
                 res.status(200).json(respuesta);
         })
@@ -34,10 +40,9 @@ const usersAPIController = {
                 let respuesta = {
                     meta: {
                         status: 200,
-                        total: user.length,
                         url: '/api/users/:id'
                     },
-                    data: user
+                    data: "id" + ": " + user.id + "   " + "nombre" + ": " + user.name + "   " + "email" + ": " + user.email + "   " + "avatar" + ": " + __dirname+user.avatar
                 }
                 res.status(200).json(respuesta);
             });
