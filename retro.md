@@ -1,3 +1,24 @@
+Retrospectiva Sprint 7
+
+Empezar a hacer:
+Verificar las validaciones
+
+Hacer más de:
+Mejorar la estética de nuestro sitio, trabajar en la UI/UX
+Verificaciones intermedias/consolelogs a medida que escribimos código
+
+
+Seguir haciendo:
+Reuniones de equipo de una hora y media los días lunes y miércoles
+
+Hacer menos de:
+
+
+Dejar de hacer:
+Pasarse de la fecha de deadline de entrega sin haber terminado por completo los entregables
+Grandes cantidades de lineas de códigos sin verificaciones intermedias
+
+
 Retrospectiva Sprint 6
 
 Empezar a hacer:
