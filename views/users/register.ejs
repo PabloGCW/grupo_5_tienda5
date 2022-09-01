@@ -32,7 +32,8 @@
                         value="<%= locals.oldData ? oldData.address : null %>"
                     >
                     <div class="erroresAddress">
-                        <ul></ul>
+                        <ul id="mensErrorDomicilio" style="color: rgb(241, 16, 16);" 
+                        style="list-style: none;" style="font-size: 12px;"></ul>
                     </div>
 
                         <% if(locals.errors && errors.address){ %>
@@ -41,10 +42,6 @@
                 </div>
                 
                 <div class="formulariodiv">
-
-                    <label for="CP">Código Postal:</label>
-                    <input type="text" 
-                    id="CP" 
 
                     <label for="cp">Código Postal:</label>
                     <input type="text" 
@@ -56,7 +53,8 @@
                     value="<%= locals.oldData ? oldData.cp : null %>"
                 >
                 <div class="erroresCP">
-                    <ul></ul>
+                    <ul id="mensErrorCP" style="color: rgb(241, 16, 16);" 
+                    style="list-style: none;" style="font-size: 12px;"></ul>
                 </div>
                     <% if(locals.errors && errors.cp){ %>
                         <div class="errorValidation"><%= errors.cp.msg %> </div>
@@ -72,7 +70,8 @@
                     value="<%= locals.oldData ? oldData.email : null %>"
                 >
                 <div class="erroresEmail">
-                    <ul></ul>
+                    <ul id="mensErrorEmail" style="color: rgb(241, 16, 16);" 
+                    style="list-style: none;" style="font-size: 12px;"></ul>
                 </div>
                     <% if(locals.errors && errors.email){ %>
                         <div class="errorValidation"><%= errors.email.msg %> </div>
@@ -88,7 +87,8 @@
                     value="<%= locals.oldData ? oldData.mobile : null %>"
                 >
                 <div class="erroresMobile">
-                    <ul></ul>
+                    <ul id="mensErrorTelefono" style="color: rgb(241, 16, 16);" 
+                    style="list-style: none;" style="font-size: 12px;"></ul>
                 </div>
                     <% if(locals.errors && errors.mobile){ %>
                         <div class="errorValidation"><%= errors.mobile.msg %> </div>
@@ -105,7 +105,8 @@
                 >
 
                 <div class="erroresName">
-                    <ul></ul>
+                    <ul id="mensErrorNombre" style="color: rgb(241, 16, 16);" 
+                    style="list-style: none;" style="font-size: 12px;"></ul>
                 </div>
 
                     <% if(locals.errors && errors.name){ %>
@@ -122,7 +123,8 @@
                     value="<%= locals.oldData ? oldData.lastName : null %>"
                 >
                 <div class="erroresLastName">
-                    <ul></ul>
+                    <ul id="mensErrorApellido" style="color: rgb(241, 16, 16);" 
+                    style="list-style: none;" style="font-size: 12px;"></ul>
                 </div>
                     <% if(locals.errors && errors.lastName){ %>
                         <div class="errorValidation"><%= errors.lastName.msg %> </div>
@@ -138,7 +140,8 @@
                     value="<%= locals.oldData ? oldData.dni : null %>"
                 >
                 <div class="erroresDNI">
-                    <ul></ul>
+                    <ul id="mensErrorDNI" style="color: rgb(241, 16, 16);" 
+                    style="list-style: none;" style="font-size: 12px;"></ul>
                 </div>
                     <% if(locals.errors && errors.dni){ %>
                         <div class="errorValidation"><%= errors.dni.msg %> </div>
@@ -153,7 +156,8 @@
                     value="<%= locals.oldData ? oldData.avatar : null %>"
                 >
                 <div class="erroresAvatar">
-                    <ul></ul>
+                    <ul id="mensErrorAvatar" style="color: rgb(241, 16, 16);" 
+                    style="list-style: none;" style="font-size: 12px;"></ul>
                 </div>
                     <% if(locals.errors && errors.avatar){ %>
                         <div class="errorValidation"><%= errors.avatar.msg %> </div>
@@ -173,7 +177,8 @@
                     value="<%= locals.oldData ? oldData.password : null %>"
                 >
                 <div class="erroresPassword">
-                    <ul></ul>
+                    <ul id="mensErrorPassword" style="color: rgb(241, 16, 16);" 
+                    style="list-style: none;" style="font-size: 12px;"></ul>
                 </div>
                     <% if(locals.errors && errors.password){ %>
                         <div class="errorValidation"><%= errors.password.msg %> </div>

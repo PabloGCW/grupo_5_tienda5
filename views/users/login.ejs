@@ -24,7 +24,8 @@
                         value="<%= locals.oldData ? oldData.email : null %>"
                     >
                     <div class="erroresEmail">
-                        <ul></ul>
+                        <ul id="mensajeErrorEmail" style="color: rgb(241, 16, 16);" 
+                        style="list-style: none;" style="font-size: 12px;"></ul>
                     </div>
                         <% if(locals.errors && errors.email){ %>
                             <div class="errorValidation"><%= errors.email.msg %> </div>
@@ -41,7 +42,8 @@
                     value="<%= locals.oldData ? oldData.password : null %>"
                     >
                 <div class="erroresPassword">
-                    <ul></ul>
+                    <ul id="mensajeErrorPassword" style="color: rgb(241, 16, 16);" 
+                    style="list-style: none;" style="font-size: 12px;"></ul>
                 </div>
                     <% if(locals.errors && errors.password){ %>
                         <div class="errorValidation"><%= errors.password.msg %> </div>

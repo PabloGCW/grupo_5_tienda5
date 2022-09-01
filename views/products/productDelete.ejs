@@ -10,7 +10,7 @@
     <%- include("../partials/header") %>
 
     <main>
-        <h3 class="formulario">Eliminar productos del Sitio</h3>
+        <h2 class="main">ELIMINAR PRODUCTOS DEL SITIO</h2>
         <form action="/Productos/eliminacionProducto/<%= productoSeleccionado.id %>?_method=DELETE"  method="POST" enctype="multipart/form-data" class="formulario">
             <div class="formColumnas">
                 
@@ -46,8 +46,8 @@
         <div class="formColumnas">
                 
                 <div class="formulariodiv">
-                    <label>Imágen:</label>
-                    <p class="inputcontrol"><img src="/images/products/<%= productoSeleccionado.image%>" alt=""></p>
+                    <!--<label>Imágen:</label>-->
+                    <p><img src="/images/products/<%= productoSeleccionado.image%>" alt="" id="imgProducto"></p>
                 </div>
             
                 

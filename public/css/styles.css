@@ -8,10 +8,6 @@
     font-size: 1em;
 }*/
 
-body{
-    padding: 220px 0px 0px;
-}
-
 /*body{
     background-color:blue;
 }*/
@@ -23,51 +19,26 @@ body{
     font-size: 14px;
     padding: 5px;
     width: 100%;
-
-    position: fixed;
-    top: 0;
-    left: 0;
-    /*z-index: 2;*/
-
-    /*position: sticky;*/
+    position: sticky;
     top: 0px;
-
     z-index: 2;
-    }
+    
+}
+
 /* Estilos para el header */
-/*header{
+header{
     background-color:brown;
     position: sticky;
     top: 25px;
-<<<<<<< HEAD
     z-index: 1;
     background-color: #ffffff;
-}*/
-header{
-    background-color: #ffffff;
-    /*background-color: brown;*/
-    height: 200px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1;
 }
 .navBar img{
-    /*margin-top: 40px;*/
     width: 57%;
-
-    z-index: 100;
-    background-color: #ffffff;
-}
-.navBar img{
-    width: 55%;
-
     height: 100%;
 }
 .navBar{
     width: 100%;
-    margin-top: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -89,7 +60,6 @@ header{
     text-decoration: none;
     color: #000;
     transition: all 0.5s ease;
-
 }
 .navBar ul li a:hover{
     padding: 5px 10px;
@@ -108,32 +78,8 @@ header{
     
 }
 .div-menu{
-
-    background-color:  #c8aa86;
-    display: flex;
-    position:fixed;
-    /*left: 60px;*/
-    justify-content: center;
-    width: 25%;
-    height: 130px;
-    line-height: 2;
-    left: 576px;
-    top: 122px;
-    
-    /*width: 100%;
-    display: none;*/
-
     width: 100%;
-
-}
-.navBar ul li a:hover{
-    padding: 5px 10px;
-    background:  #c8aa86;
-    /*color: #000;*/
-    border-radius: 15px;
-}
-.liOcultoNavBar{
-    /*display: none;*/
+    display: none;
     /*position: relative;*/
     /*background: #c8aa86;;*/
     /*flex-direction: column;*/
@@ -279,11 +225,7 @@ main  {
 main h2{
     margin-bottom: 30px;
     text-align: center;
-
     font-size: 1.2rem;
-
-    font-size: 2em;
-
 }
 /*
 .mainProdCart h2{
@@ -548,19 +490,11 @@ footer{
 }
 
 .camposInicioSesion{ 
-
     width: 70%;
     margin-bottom: 15px;
     display: flex;
     flex-wrap:wrap;
     /*text-align: justify;*/
-
-    width: 40%;
-    margin-bottom: 15px;
-    display: flex;
-    flex-wrap:wrap;
-    text-align: justify;
-
     margin-left: auto;
     margin-right: auto;
     /*margin: 5px 50px;*/
@@ -583,11 +517,7 @@ footer{
     flex-wrap: wrap;
     margin: auto;
     margin-top: 50px;
-
     width: 70%;
-
-    width: 60%;
-
 }
 .formColumnas{
     display: flex;
@@ -645,20 +575,14 @@ footer{
     margin: 0%;
     padding: 1vw;
     text-align: left;
-<<<<<<< HEAD
 }*/
 .formulariodiv{ 
     width: 330px;
-
-}
-.formulariodiv{ 
-    width: 220px;
-
     display: flex;
     flex-wrap:wrap;
     text-align: justify;
     margin: 5px 50px;
-    /*justify-content: center; */
+    justify-content: center;
 } 
 .formulariodiv label{
     display: block;
@@ -707,11 +631,7 @@ button.buttonform{
     background-color: #DCDCDC;
     border: #9b9a9a solid 1px;
     border-radius: 5px;
-
     /*width: 25%;*/
-
-    width: 25%;
-
     margin-bottom: 15px;
     margin-top: 15px;
     transition: all 450ms;
@@ -747,7 +667,7 @@ button.buttonform:hover{
     width: 100%;
     
 }
-#imgEdicionProducto{
+#imgProducto{
     width: 100%;
     padding: 2px;
     border:#9b9a9a solid 1px;
@@ -895,18 +815,6 @@ button.compra:hover{
 
 @media (min-width: 768px) {
 
-    .div-menu{
-        background-color:  #c8aa86;
-        display: flex;
-        position:fixed;
-        /*left: 60px;*/
-        justify-content: center;
-        width: 25%;
-        height: 130px;
-        line-height: 2;
-        left: 576px;
-        top: 122px;
-    }
     .registerFormulario{
         width: 90%;
     }
@@ -925,9 +833,8 @@ button.compra:hover{
     }
     .serviciosMobile{
         display: none;
-    }
+        }
     .serviciosDesktop{
-
         display: flex;
         justify-content: space-around;
         text-align: center;
@@ -940,17 +847,9 @@ button.compra:hover{
         flex-direction: row;
         justify-content: space-between;
     }
-
     button.buttonform{
         width: 25%;
     }
-.serviciosDesktop{
-        display: flex;
-        justify-content: space-around;
-        text-align: center;
-    }
-
-}
 
 
 
@@ -982,6 +881,9 @@ button.compra:hover{
 }
 
 
+
+
+}
 
 
 @media (min-width: 1024px) {
@@ -1022,14 +924,11 @@ button.compra:hover{
         display: flex;
     }
     .div-menu{
-        background-color: #ffffff;
         display: flex;
-        /*left: 60px;*/
+        left: 60px;
         justify-content: end;
-        /*width: 30%;*/
-        top: 95px;
+        width: 30%;
     }
-
     .div-menu ul{
         /*background: blue;*/
         display: flex ;
@@ -1104,12 +1003,6 @@ button.compra:hover{
         max-width: 40%;
     }
 
-    /* Cambios de la Creación Productos */
-    .formularioCreaProducto{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
     /* cambios de la Edicion Productos */
     .formulario{
         display: flex;
@@ -1164,7 +1057,7 @@ button.compra:hover{
     width: 70%;
     }
     .div-menu{
-        width: 45%;
+        width: 50%;
         font-size: 1.2rem;
     }    
     .ladoIzquierdo{

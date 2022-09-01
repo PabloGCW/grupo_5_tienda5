@@ -91,6 +91,7 @@ const mainController = {
                         msg: 'Este email no se encuentra registrado'
                     }
                 }
+                
             });
         })
         .catch(function(err) {

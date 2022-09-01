@@ -9,10 +9,18 @@ window.addEventListener("load", function(){
       
         let campoPassword = document.querySelector("input.password")
         if(campoPassword.value == ""){
+            var mensajeErrorPassword = document.getElementById('mensajeErrorPassword');
+            mensajeErrorPassword.style.color = 'rgb(241, 16, 16)', 
+            mensajeErrorPassword.style.listStyle = 'none',
+            mensajeErrorPassword.style.fontSize = '12px';
             erroresPassword.push("El campo de contraseña tiene que estar completo")
         }
         let campoEmail = document.querySelector("input.email")
         if(campoEmail.value == ""){
+            var mensajeErrorEmail = document.getElementById('mensajeErrorEmail');
+            mensajeErrorEmail.style.color = 'rgb(241, 16, 16)', 
+            mensajeErrorEmail.style.listStyle = 'none',
+            mensajeErrorEmail.style.fontSize = '12px';
             erroresEmail.push("El campo de email tiene que estar completo")
         }
 
